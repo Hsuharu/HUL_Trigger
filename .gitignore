@@ -1,0 +1,6 @@
+#Ignore config
+/pro*
+*.swp
+*~
+.DS_Store
+*.o
