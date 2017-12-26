@@ -50,10 +50,6 @@ int main(int argc, char* argv[])
   //-------------------------------------------------------------------------
   // RGN1 : Region1 Module
   //-------------------------------------------------------------------------
-                                       
-      //-- Select TOF segment --
-//  fModule.WriteModule(   RGN1::mid,   RGN1::SEL_TOF             ,   0b111111111111111111111111);
-  fModule.WriteModule(   RGN1::mid,   RGN1::SEL_TOF             ,   0b000000000010000000000000);
       //-- Pi,P Beam --
   fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_Beam      ,          0);
   fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_Beam      ,          0);

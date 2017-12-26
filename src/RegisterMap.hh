@@ -303,5 +303,10 @@ namespace HUL_Trigger{
     };
   };
 
+  // COIN  --------------------------------------------------------------------
+  enum CoinDef{
+    CoinAnd=1, CoinNot=0, DontCare=2
+  };
+
 };
 #endif
