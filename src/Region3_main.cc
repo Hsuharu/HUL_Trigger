@@ -60,8 +60,9 @@ int main(int argc, char* argv[])
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_PS_OR      ,               1);
                                                             
-  fModule.WriteModule(   RGN3::mid,  RGN3::Delay_Else_OR    ,               1);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Delay_all_Else_OR    ,           1);
   fModule.WriteModule(   RGN3::mid,  RGN3::Width_Else_OR    ,               1);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Delay_part_Else_OR   ,           4);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_K_Scat     ,               6);
   fModule.WriteModule(   RGN3::mid,  RGN3::Width_K_Scat     ,               5);
