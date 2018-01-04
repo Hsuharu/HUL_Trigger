@@ -247,6 +247,7 @@ namespace HUL_Trigger{
       PreScale_Coin1    = 0xd40, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
       PreScale_Coin2    = 0xd50, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
       PreScale_For_E03  = 0xd60, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
+      RST_PSCNT         = 0xd70, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
 
       Delay_PS_OR       = 0xa00, // w/r, [4:0], 
 

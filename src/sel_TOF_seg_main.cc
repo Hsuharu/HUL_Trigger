@@ -19,9 +19,11 @@ using namespace Probe;
 using namespace DelayValue;
 int main(int argc, char* argv[])
 {
-  if(1 == argc){
+//  if(1 == argc){
+  if(1 != argc){
     std::cout << "Usage\n";
-    std::cout << "hul_main [IP address]" << std::endl;
+//    std::cout << "hul_main [IP address]" << std::endl;
+    std::cout << "ONLY_hul_main" << std::endl;
     return 0;
   }// usage
   
@@ -31,7 +33,10 @@ int main(int argc, char* argv[])
   int seg[25];
   int On  = 1; 
   int Off = 0; 
-  char* board_ip = argv[1];
+//  char* board_ip = argv[1];
+  char* board_ip                  ;
+  char fixedip[] = "192.168.11.11";
+  board_ip = fixedip;
   rbcp_header rbcpHeader;
   rbcpHeader.type = UDPRBCP::rbcp_ver_;
   rbcpHeader.id   = 0;
@@ -39,6 +44,14 @@ int main(int argc, char* argv[])
   FPGAModule fModule(board_ip, udp_port, &rbcpHeader, 0);
   //  std::cout << std::hex << fModule.ReadModule(BCT::mid, BCT::laddr_Version, 4) << std::endl;
   
+///////////////////////////////////////////////////////////
+//                                                       //
+//    TOF Selector       Please write On or Off          //
+//                          On  -> Use                   //
+//                          Off -> Not Use               //
+//                                                       //
+///////////////////////////////////////////////////////////
+
 
       TOF_segment[1 ] =   Off;
       TOF_segment[2 ] =   Off;
@@ -64,6 +77,10 @@ int main(int argc, char* argv[])
       TOF_segment[22] =   Off;
       TOF_segment[23] =   Off;
       TOF_segment[24] =   Off;
+
+///////////////////////////////////////////////////////////
+
+
 
 
 // Fanction

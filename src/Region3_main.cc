@@ -19,14 +19,19 @@ using namespace Probe;
 using namespace DelayValue;
 int main(int argc, char* argv[])
 {
-  if(1 == argc){
+//  if(1 == argc){
+  if(1 != argc){
     std::cout << "Usage\n";
-    std::cout << "hul_main [IP address]" << std::endl;
+//    std::cout << "hul_main [IP address]" << std::endl;
+    std::cout << "ONLY_hul_main" << std::endl;
     return 0;
   }// usage
   
 // body ------------------------------------------------------
-  char* board_ip = argv[1];
+//  char* board_ip = argv[1];
+  char* board_ip                  ;
+  char fixedip[] = "192.168.11.11";
+  board_ip = fixedip;
   rbcp_header rbcpHeader;
   rbcpHeader.type = UDPRBCP::rbcp_ver_;
   rbcpHeader.id   = 0;
@@ -51,6 +56,7 @@ int main(int argc, char* argv[])
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin1   ,               4);
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin2   ,               5);
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_For_E03 ,         499999 );
+  fModule.WriteModule(   RGN3::mid,  RGN3::RST_PSCNT        ,              0 );
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_PS_OR      ,               1);
                                                             

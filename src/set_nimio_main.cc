@@ -19,14 +19,19 @@ using namespace Probe;
 using namespace DelayValue;
 int main(int argc, char* argv[])
 {
-  if(1 == argc){
+//  if(1 == argc){
+  if(1 != argc){
     std::cout << "Usage\n";
-    std::cout << "set_nimio [IP address]" << std::endl;
+//    std::cout << "hul_main [IP address]" << std::endl;
+    std::cout << "ONLY_hul_main" << std::endl;
     return 0;
   }// usage
   
 // body ------------------------------------------------------
-  char* board_ip = argv[1];
+//  char* board_ip = argv[1];
+  char* board_ip                  ;
+  char fixedip[] = "192.168.11.11";
+  board_ip = fixedip;
   rbcp_header rbcpHeader;
   rbcpHeader.type = UDPRBCP::rbcp_ver_;
   rbcpHeader.id   = 0;
