@@ -50,24 +50,24 @@ int main(int argc, char* argv[])
   // RGN3 : Region3 ( Else Or )Module
   //-------------------------------------------------------------------------
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam    ,               0);
-  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam_TOF,               1);
-  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam_Pi ,               2);
-  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam_P  ,               3);
-  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin1   ,               4);
-  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin2   ,               5);
-  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_For_E03 ,         499999 );
-  fModule.WriteModule(   RGN3::mid,  RGN3::RST_PSCNT        ,              0 );
+  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam_TOF,               0);
+  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam_Pi ,               0);
+  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Beam_P  ,               0);
+  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin1   ,               0);
+  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin2   ,               0);
+  fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_For_E03 ,               0);
+  fModule.WriteModule(   RGN3::mid,  RGN3::RST_PSCNT        ,               1);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_PS_OR      ,               1);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_all_Else_OR    ,           1);
-  fModule.WriteModule(   RGN3::mid,  RGN3::Width_Else_OR    ,               1);
-  fModule.WriteModule(   RGN3::mid,  RGN3::Delay_part_Else_OR   ,           4);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Width_Else_OR    ,               4);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Delay_part_Else_OR   ,           1);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_K_Scat     ,               6);
   fModule.WriteModule(   RGN3::mid,  RGN3::Width_K_Scat     ,               5);
                                                             
-  fModule.WriteModule(   RGN3::mid,  RGN3::Selector_PS      ,       0b0100000);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Selector_PS      ,       0b1000000);
 
 
 
@@ -78,6 +78,7 @@ int main(int argc, char* argv[])
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 //  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH1_Pi,    1);
+  fModule.ReadModule(   RGN3::mid,  RGN3::RST_PSCNT        ,              1);
 //  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH2_Pi,    1);
 //  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH1_P ,    1);
 //  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH2_P ,    1);
@@ -87,7 +88,7 @@ int main(int argc, char* argv[])
 //  fModule.ReadModule(   RGN1::mid,   RGN1::Width_BH1_P ,    1);
 //  fModule.ReadModule(   RGN1::mid,   RGN1::Width_BH2_P ,    1);
 //
-//  std::cout <<  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH1_Pi,    1) << std::endl;
+  std::cout <<    fModule.ReadModule(   RGN3::mid,  RGN3::RST_PSCNT        ,              1)<< std::endl;
 //  std::cout <<  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH2_Pi,    1) << std::endl;
 //  std::cout <<  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH1_P ,    1) << std::endl;
 //  std::cout <<  fModule.ReadModule(   RGN1::mid,   RGN1::Delay_BH2_P ,    1) << std::endl;

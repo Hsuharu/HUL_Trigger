@@ -43,12 +43,12 @@ int main(int argc, char* argv[])
 
 // *****  KScattering *****
     Beam   = CoinAnd   ; 
-    SAC_or = CoinAnd   ;
-    TOF_or = CoinAnd   ;
-    LC_or  = CoinAnd   ;
-    TOF_HT = CoinAnd   ;
-    Other4 = CoinAnd   ;
-    Other5 = CoinAnd   ; 
+    SAC_or = DontCare   ;
+    TOF_or = DontCare   ;
+    LC_or  = DontCare   ;
+    TOF_HT = DontCare   ;
+    Other4 = DontCare   ;
+    Other5 = DontCare   ; 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //           Write                                                                            // 

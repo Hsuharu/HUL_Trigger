@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
 
 //Coin -------------------------------------------------------
 // *****  Beam  *****
-    BH1_or = CoinAnd   ;       
+    BH1_or = DontCare   ;       
     BH2_or = CoinAnd   ; 
 // *****  KScattering *****
     SAC_or = CoinAnd   ;
@@ -66,18 +66,18 @@ int main(int argc, char* argv[])
   // RGN1 : Region1 Module
   //-------------------------------------------------------------------------
       //-- Pi,P Beam --
-  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_Beam      ,          0); // 1~15  
-  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_Beam      ,          0); // 1~15
-  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_Pi        ,          0); // 1~15
-  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_Pi        ,          0); // 1~15
-  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_P         ,          0); // 1~15
-  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_P         ,          0); // 1~15
+  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_Beam      ,          1); // 1~15  
+  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_Beam      ,          1); // 1~15
+  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_Pi        ,          1); // 1~15
+  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_Pi        ,          1); // 1~15
+  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH1_P         ,          1); // 1~15
+  fModule.WriteModule(   RGN1::mid,   RGN1::Delay_BH2_P         ,          1); // 1~15
 
   fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH1_Beam      ,          4); // 1~15
   fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH2_Beam      ,          4); // 1~15
   fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH1_Pi        ,          4); // 1~15
   fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH2_Pi        ,          4); // 1~15
-  fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH1_P         ,          8); // 1~15
+  fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH1_P         ,          4); // 1~15
   fModule.WriteModule(   RGN1::mid,   RGN1::Width_BH2_P         ,          4); // 1~15
                                                               
       //-- K_Scat Coin--                 

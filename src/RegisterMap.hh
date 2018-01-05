@@ -247,7 +247,7 @@ namespace HUL_Trigger{
       PreScale_Coin1    = 0xd40, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
       PreScale_Coin2    = 0xd50, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
       PreScale_For_E03  = 0xd60, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
-      RST_PSCNT         = 0xd70, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
+      RST_PSCNT         = 0xe10, // w/r, [23:0], select Preset Scale Value(0 ~ 2^23-1) 
 
       Delay_PS_OR       = 0xa00, // w/r, [4:0], 
       Delay_part_Else_OR     = 0xa10, // w/r, [4:0], 
@@ -259,7 +259,7 @@ namespace HUL_Trigger{
       Width_K_Scat      = 0xbb0, // w/r, [4:0], 
 
       Selector_PS       = 0xe00,  // w/r, [6:0], 
-      Reset_PS          = 0xe10  // w/r, [6:0], 
+//      Reset_PS          = 0xe10  // w/r, [6:0], 
 
     };
   };
