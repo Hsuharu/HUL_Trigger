@@ -71,8 +71,8 @@ int main(int argc, char* argv[])
   fModule.WriteModule(   RGN4::mid,  RGN4::Delay_BH2_K       ,              1);
   fModule.WriteModule(   RGN4::mid,  RGN4::Width_BH2_K       ,              4);
   fModule.WriteModule(   RGN4::mid,  RGN4::Selector_8        , BH2_K_Selector);
-  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Clock    ,       Sel::On );
-  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Reserve2 ,       Sel::On );
+  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Clock    ,       Sel::Off);
+  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Reserve2 ,       Sel::Off);
 
 
 

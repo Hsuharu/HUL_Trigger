@@ -42,9 +42,9 @@ int main(int argc, char* argv[])
   CoinModule Region2_5_Coin;
 
 // *****  KScattering *****
-    Beam   = CoinAnd   ; 
+    Beam   = DontCare   ; 
     SAC_or = DontCare   ;
-    TOF_or = DontCare   ;
+    TOF_or = CoinAnd   ;
     LC_or  = DontCare   ;
     TOF_HT = DontCare   ;
     Other4 = DontCare   ;

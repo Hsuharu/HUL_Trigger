@@ -17,3 +17,4 @@
  ./bin/Region2_6
  ./bin/Region3
  ./bin/Region4
+ ./bin/sel_TOF_seg

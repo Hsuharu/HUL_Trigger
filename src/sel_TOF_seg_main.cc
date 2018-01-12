@@ -53,30 +53,30 @@ int main(int argc, char* argv[])
 ////////////////////////////////////////////////////////////////////////
 
 
-  TOF_seg = TOFSel::Seg1  
-          | TOFSel::Seg2  
-          | TOFSel::Seg3  
-          | TOFSel::Seg4  
-          | TOFSel::Seg5  
-          | TOFSel::Seg6  
-          | TOFSel::Seg7  
-          | TOFSel::Seg8  
-          | TOFSel::Seg9  
-          | TOFSel::Seg10 
-          | TOFSel::Seg11 
-          | TOFSel::Seg12 
-          | TOFSel::Seg13 
-          | TOFSel::Seg14 
-          | TOFSel::Seg15 
-          | TOFSel::Seg16 
-          | TOFSel::Seg17 
-          | TOFSel::Seg18 
-          | TOFSel::Seg19 
-          | TOFSel::Seg20 
-          | TOFSel::Seg21 
-          | TOFSel::Seg22 
+  TOF_seg = TOFSel::Seg24 
           | TOFSel::Seg23 
-          | TOFSel::Seg24 ; 
+          | TOFSel::Seg22 
+          | TOFSel::Seg21 
+          | TOFSel::Seg20
+          | TOFSel::Seg19 
+          | TOFSel::Seg18 
+          | TOFSel::Seg17 
+          | TOFSel::Seg16 
+          | TOFSel::Seg15 
+          | TOFSel::Seg14 
+          | TOFSel::Seg13 
+          | TOFSel::Seg12 
+          | TOFSel::Seg11 
+          | TOFSel::Seg10 
+          | TOFSel::Seg9 
+          | TOFSel::Seg8 
+          | TOFSel::Seg7 
+          | TOFSel::Seg6 
+          | TOFSel::Seg5 
+          | TOFSel::Seg4 
+          | TOFSel::Seg3 
+          | TOFSel::Seg2 
+          | TOFSel::Seg1 ; 
           
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

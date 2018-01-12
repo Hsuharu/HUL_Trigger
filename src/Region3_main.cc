@@ -49,13 +49,13 @@ int main(int argc, char* argv[])
 /////////////////////////////////////////////////////////////////////////////////
 
 
-   Else_OR_Selector = Else_OR_Sel::PreScale_Beam      
-                    | Else_OR_Sel::PreScale_Beam_TOF  
-                    | Else_OR_Sel::PreScale_Beam_Pi   
-                    | Else_OR_Sel::PreScale_Beam_P    
-                    | Else_OR_Sel::PreScale_Coin1     
-                    | Else_OR_Sel::PreScale_Coin2     
-                    | Else_OR_Sel::PreScale_For_E03  ; 
+   Else_OR_Selector = Else_OR_Sel::PreScale_Beam_TOF
+                    | Else_OR_Sel::Off  
+                    | Else_OR_Sel::Off  
+                    | Else_OR_Sel::Off  
+                    | Else_OR_Sel::Off  
+                    | Else_OR_Sel::Off  
+                    | Else_OR_Sel::Off ; 
                 
           
 
@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_PS_OR      ,               1);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_all_Else_OR    ,           1);
-  fModule.WriteModule(   RGN3::mid,  RGN3::Width_Else_OR    ,               4);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Width_Else_OR    ,              12);
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_part_Else_OR   ,           1);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_K_Scat     ,               6);
