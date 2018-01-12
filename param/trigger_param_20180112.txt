@@ -2,29 +2,29 @@ LED 0
 
 
 TOF_Seg1                      1        ________________________________________
-TOF_Seg2                      1        |                                      |
-TOF_Seg3                      1        |                                      |
-TOF_Seg4                      1        |                                      |
-TOF_Seg5                      1        |        Please Write   0 or 1         |
-TOF_Seg6                      1        |                                      |
-TOF_Seg7                      1        |          On ->1, Off->0              |
-TOF_Seg8                      1        |                                      |
-TOF_Seg9                      1        |                                      |
-TOF_Seg10                     1        |                                      |
-TOF_Seg11                     1        |                                      |
-TOF_Seg12                     1        |                                      |
-TOF_Seg13                     1        |                                      |
-TOF_Seg14                     1        |                                      |
-TOF_Seg15                     1        |                                      |
-TOF_Seg16                     1        |                                      |
-TOF_Seg17                     1        |                                      |
-TOF_Seg18                     1        |                                      |
-TOF_Seg19                     1        |                                      |
-TOF_Seg20                     1        |                                      |
-TOF_Seg21                     1        |                                      |
-TOF_Seg22                     1        |                                      |
-TOF_Seg23                     1        |                                      |
-TOF_Seg24                     1        |______________________________________| 
+TOF_Seg2                      0        |                                      |
+TOF_Seg3                      0        |                                      |
+TOF_Seg4                      0        |                                      |
+TOF_Seg5                      0        |        Please Write   0 or 1         |
+TOF_Seg6                      0        |                                      |
+TOF_Seg7                      0        |          On ->1, Off->0              |
+TOF_Seg8                      0        |                                      |
+TOF_Seg9                      0        |                                      |
+TOF_Seg10                     0        |                                      |
+TOF_Seg11                     0        |                                      |
+TOF_Seg12                     0        |                                      |
+TOF_Seg13                     0        |                                      |
+TOF_Seg14                     0        |                                      |
+TOF_Seg15                     0        |                                      |
+TOF_Seg16                     0        |                                      |
+TOF_Seg17                     0        |                                      |
+TOF_Seg18                     0        |                                      |
+TOF_Seg19                     0        |                                      |
+TOF_Seg20                     0        |                                      |
+TOF_Seg21                     0        |                                      |
+TOF_Seg22                     0        |                                      |
+TOF_Seg23                     0        |                                      |
+TOF_Seg24                     0        |______________________________________| 
 
 
 RGN1::Delay_BH1_Beam          1
@@ -54,14 +54,14 @@ RGN1::Width_SAC_K_Scat       12
 RGN1::Width_TOF_K_Scat       12
 RGN1::Width_Lucite_K_Scat    12
 RGN1::Width_TOF_HT_K_Scat    12
-RGN1::Width_Others4_K_Scat    8
-RGN1::Width_Others5_K_Scat    8  
+RGN1::Width_Others4_K_Scat   12
+RGN1::Width_Others5_K_Scat   12  
                                
                               
 RGN1::Delay_K_Scat            1
-RGN1::Width_K_Scat            4
+RGN1::Width_K_Scat           12 
  
-RGN1::Coin_Beam_BH1           1 ## Veto->0, On ->1, Off->2 ## 
+RGN1::Coin_Beam_BH1           2 ## Veto->0, On ->1, Off->2 ## 
 RGN1::Coin_Beam_BH2           1 ## Veto->0, On ->1, Off->2 ##
 
 RGN1::Coin_KScat_SAC          1 ## Veto->0, On ->1, Off->2 ##
@@ -87,13 +87,13 @@ RGN2_1::Width_TOF_HT          8
 RGN2_1::Width_Others4         8
 RGN2_1::Width_Others5         8
                          
-(Beam,TOF)_Beam               1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_SAC                1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_TOF                1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_LC                 1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_TOF_HT             1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_Others4            1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_Others5            1 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_Beam               2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_SAC                2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_TOF                2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_LC                 2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_TOF_HT             2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_Others4            2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_Others5            2 ## Veto->0, On ->1, Off->2 ##
 
 RGN2_2::Delay_Beam            1
 RGN2_2::Delay_SAC             1
@@ -111,13 +111,13 @@ RGN2_2::Width_TOF_HT          8
 RGN2_2::Width_Others4         8
 RGN2_2::Width_Others5         8
                          
-(Beam,pi)_Beam                1 ## Veto->0, On ->1, Off->2 ##
-(Beam,pi)_SAC                 1 ## Veto->0, On ->1, Off->2 ##
+(Beam,pi)_Beam                2 ## Veto->0, On ->1, Off->2 ##
+(Beam,pi)_SAC                 2 ## Veto->0, On ->1, Off->2 ##
 (Beam,pi)_TOF                 1 ## Veto->0, On ->1, Off->2 ##
-(Beam,pi)_LC                  1 ## Veto->0, On ->1, Off->2 ##
-(Beam,pi)_TOF_HT              1 ## Veto->0, On ->1, Off->2 ##
-(Beam,pi)_Others4             1 ## Veto->0, On ->1, Off->2 ##
-(Beam,pi)_Others5             1 ## Veto->0, On ->1, Off->2 ##
+(Beam,pi)_LC                  2 ## Veto->0, On ->1, Off->2 ##
+(Beam,pi)_TOF_HT              2 ## Veto->0, On ->1, Off->2 ##
+(Beam,pi)_Others4             2 ## Veto->0, On ->1, Off->2 ##
+(Beam,pi)_Others5             2 ## Veto->0, On ->1, Off->2 ##
 
 RGN2_3::Delay_Beam            1
 RGN2_3::Delay_SAC             1
@@ -224,31 +224,31 @@ RGN3::PreScale_For_E03        1   |______________________________________|
 RGN3::Delay_PS_OR             1
                          
 RGN3::Delay_all_Else_OR       1
-RGN3::Width_Else_OR           1
+RGN3::Width_Else_OR          12 
 RGN3::Delay_part_Else_OR      1
                        
 RGN3::Delay_K_Scat            6
 RGN3::Width_K_Scat            5
 
 Else_OR_selector_Beam         1   ________________________________________
-Else_OR_selector_Beam_TOF     1   |                                      |    
-Else_OR_selector_Beam_Pi      1   |      Please Write   0 or 1           |   
-Else_OR_selector_Beam_P       1   |                                      |  
-Else_OR_selector_Coin1        1   |        On ->1, Off->0                | 
-Else_OR_selector_Coin2        1   |                                      | 
-Else_OR_selector_For_E03      1   |______________________________________|   
+Else_OR_selector_Beam_TOF     0   |                                      |    
+Else_OR_selector_Beam_Pi      0   |      Please Write   0 or 1           |   
+Else_OR_selector_Beam_P       0   |                                      |  
+Else_OR_selector_Coin1        0   |        On ->1, Off->0                | 
+Else_OR_selector_Coin2        0   |                                      | 
+Else_OR_selector_For_E03      0   |______________________________________|   
 
 RGN4::Delay_BH2               6
 RGN4::Delay_BH2_K             1
 RGN4::Width_BH2_K             4
 
-Selector_(BH2_1,K)            1   ________________________________________
-Selector_(BH2_2,K)            1   |                                      |    
-Selector_(BH2_3,K)            1   |                                      |   
-Selector_(BH2_4,K)            1   |                                      |  
-Selector_(BH2_5,K)            1   |        Please Write   0 or 1         | 
-Selector_(BH2_6,K)            1   |                                      | 
-Selector_(BH2_7,K)            1   |          On ->1, Off->0              | 
-Selector_(BH2_8,K)            1   |                                      | 
-Selector_Clock                1   |                                      | 
-Selector_Reserve2             1   |______________________________________|   
+Selector_(BH2_1,K)            0   ________________________________________
+Selector_(BH2_2,K)            0   |                                      |    
+Selector_(BH2_3,K)            0   |                                      |   
+Selector_(BH2_4,K)            0   |                                      |  
+Selector_(BH2_5,K)            0   |        Please Write   0 or 1         | 
+Selector_(BH2_6,K)            0   |                                      | 
+Selector_(BH2_7,K)            0   |          On ->1, Off->0              | 
+Selector_(BH2_8,K)            0   |                                      | 
+Selector_Clock                0   |                                      | 
+Selector_Reserve2             0   |______________________________________|   

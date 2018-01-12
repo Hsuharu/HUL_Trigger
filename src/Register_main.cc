@@ -47,10 +47,6 @@ int main(int argc, char* argv[])
      
   }
   
-  std::cout << param["today"] << std::endl;
-   
-  return 0;
-
 // body ------------------------------------------------------
   std::string board_ip = "192.168.11.11";
   rbcp_header rbcpHeader;
@@ -149,12 +145,12 @@ int main(int argc, char* argv[])
                                                               
       //-- Coincidence -------         
   fModule.WriteModule(   RGN1::mid,   RGN1::Coin_ctrl_Beam      ,  Region1_Coin.BeamCtrl(
-                                                                     param["RGN1::Coin_ctrl_Beam_BH1"],
-                                                                     param["RGN1::Coin_ctrl_Beam_BH2"]) );
+                                                                     param["RGN1::Coin_Beam_BH1"],
+                                                                     param["RGN1::Coin_Beam_BH2"]) );
 
   fModule.WriteModule(   RGN1::mid,   RGN1::Coin_coin_Beam      ,  Region1_Coin.BeamCoin(
-								     param["RGN1::Coin_ctrl_Beam_BH1"],
-                                                                     param["RGN1::Coin_ctrl_Beam_BH2"]) );
+								     param["RGN1::Coin_Beam_BH1"],
+                                                                     param["RGN1::Coin_Beam_BH2"]) );
 
   fModule.WriteModule(   RGN1::mid,   RGN1::Coin_ctrl_K_Scat    ,  Region1_Coin.KScatCtrl(
    								     param["RGN1::Coin_KScat_SAC"]   ,
