@@ -29,6 +29,7 @@ int main(int argc, char* argv[])
   
 // body ------------------------------------------------------
 //  char* board_ip = argv[1];
+  int BH2_K_Selector;
   char* board_ip                  ;
   char fixedip[] = "192.168.11.11";
   board_ip = fixedip;
@@ -39,6 +40,22 @@ int main(int argc, char* argv[])
   FPGAModule fModule(board_ip, udp_port, &rbcpHeader, 0);
   //  std::cout << std::hex << fModule.ReadModule(BCT::mid, BCT::laddr_Version, 4) << std::endl;
 
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//    BH2_K Selector       Please write SegN or Off behind BH2_KSel::          //
+//                          SegN  -> N is Segment Number                       //
+//                          Off -> Not Use                                     //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
+
+  BH2_K_Selector = BH2_K_Sel::Seg1
+                  |BH2_K_Sel::Seg2
+                  |BH2_K_Sel::Seg3
+                  |BH2_K_Sel::Seg4
+                  |BH2_K_Sel::Seg5
+                  |BH2_K_Sel::Seg6
+                  |BH2_K_Sel::Seg7
+                  |BH2_K_Sel::Seg8 ;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //           Write                                                                            // 
@@ -53,9 +70,9 @@ int main(int argc, char* argv[])
   fModule.WriteModule(   RGN4::mid,  RGN4::Delay_BH2         ,              6);
   fModule.WriteModule(   RGN4::mid,  RGN4::Delay_BH2_K       ,              1);
   fModule.WriteModule(   RGN4::mid,  RGN4::Width_BH2_K       ,              4);
-  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_8        ,     0b11111111);
-  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Clock    ,              1);
-  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Reserve2 ,              1);
+  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_8        , BH2_K_Selector);
+  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Clock    ,       Sel::On );
+  fModule.WriteModule(   RGN4::mid,  RGN4::Selector_Reserve2 ,       Sel::On );
 
 
 

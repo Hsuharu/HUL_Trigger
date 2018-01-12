@@ -29,6 +29,7 @@ int main(int argc, char* argv[])
   
 // body ------------------------------------------------------
 //  char* board_ip = argv[1];
+  int Else_OR_Selector;
   char* board_ip                  ;
   char fixedip[] = "192.168.11.11";
   board_ip = fixedip;
@@ -39,6 +40,24 @@ int main(int argc, char* argv[])
   FPGAModule fModule(board_ip, udp_port, &rbcpHeader, 0);
   //  std::cout << std::hex << fModule.ReadModule(BCT::mid, BCT::laddr_Version, 4) << std::endl;
 
+/////////////////////////////////////////////////////////////////////////////////
+//                                                                             //
+//    Else OR Selector       Please write PreScale Signal Name or Off behind Else_OR_Sel::     //
+//                           SegN  -> N is Segment Number                      //
+//                           Off -> Not Use                                    //
+//                                                                             //
+/////////////////////////////////////////////////////////////////////////////////
+
+
+   Else_OR_Selector = Else_OR_Sel::PreScale_Beam      
+                    | Else_OR_Sel::PreScale_Beam_TOF  
+                    | Else_OR_Sel::PreScale_Beam_Pi   
+                    | Else_OR_Sel::PreScale_Beam_P    
+                    | Else_OR_Sel::PreScale_Coin1     
+                    | Else_OR_Sel::PreScale_Coin2     
+                    | Else_OR_Sel::PreScale_For_E03  ; 
+                
+          
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //           Write                                                                            // 
@@ -67,7 +86,7 @@ int main(int argc, char* argv[])
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_K_Scat     ,               6);
   fModule.WriteModule(   RGN3::mid,  RGN3::Width_K_Scat     ,               5);
                                                             
-  fModule.WriteModule(   RGN3::mid,  RGN3::Selector_PS      ,       0b1000000);
+  fModule.WriteModule(   RGN3::mid,  RGN3::Selector_PS      ,Else_OR_Selector);
 
 
 
