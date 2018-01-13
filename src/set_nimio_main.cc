@@ -49,18 +49,18 @@ int main(int argc, char* argv[])
 
   fModule.WriteModule(   IOM::mid,  IOM::NIMOUT1  ,        ID1::BH1_Beam);
   fModule.WriteModule(   IOM::mid,  IOM::NIMOUT2  ,        ID1::BH2_Beam);
-  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT3  ,        ID1::TOF_or  );
-  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT4  ,        ID1::clk10kHz);
+  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT3  ,        ID1::BH1_pi);
+  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT4  ,        ID1::BH2_pi);
 
                  ////////////////////////////////////////
                  //    ID 1                            //      
                  ////////////////////////////////////////
                  //     0            BH1_Beam          //        
                  //     1            BH2_Beam          //      
-                 //     2            BH1_Pi            //      
-                 //     3            BH2_Pi            //      
-                 //     4            BH1_P             //      
-                 //     5            BH2_P             //      
+                 //     2            BH1_pi            //      
+                 //     3            BH2_pi            //      
+                 //     4            BH1_p             //      
+                 //     5            BH2_p             //      
                  //     6            SAC_K_Scat        //      
                  //     7            TOF_K_Scat        //      
                  //     8            LC_K_Scat         //      

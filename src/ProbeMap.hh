@@ -12,10 +12,10 @@ namespace Probe{
     enum NIMID1_for_NIMOUT1_2{
                 BH1_Beam          = 0b000000,   // 0
                 BH2_Beam          = 0b000001,   // 1
-                BH1_Pi            = 0b000010,   // 2
-                BH2_Pi            = 0b000011,   // 3
-                BH1_P             = 0b000100,   // 4
-                BH2_P             = 0b000101,   // 5
+                BH1_pi            = 0b000010,   // 2
+                BH2_pi            = 0b000011,   // 3
+                BH1_p             = 0b000100,   // 4
+                BH2_p             = 0b000101,   // 5
                 SAC_K_Scat        = 0b000110,   // 6
                 TOF_K_Scat        = 0b000111,   // 7
                 LC_K_Scat         = 0b001000,   // 8
