@@ -399,6 +399,7 @@ int main(int argc, char* argv[])
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin1   ,        param["RGN3::PreScale_Coin1"]    -1 );
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_Coin2   ,        param["RGN3::PreScale_Coin2"]    -1 );
   fModule.WriteModule(   RGN3::mid,  RGN3::PreScale_For_E03 ,        param["RGN3::PreScale_For_E03"]  -1 );
+  fModule.WriteModule(   RGN3::mid,  RGN3::RST_PSCNT        ,               1);
                                                             
   fModule.WriteModule(   RGN3::mid,  RGN3::Delay_PS_OR        ,      param["RGN3::Delay_PS_OR"]);
                                                                                                     
