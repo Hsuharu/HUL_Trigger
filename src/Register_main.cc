@@ -48,7 +48,8 @@ int main(int argc, char* argv[])
   }
   
 // body ------------------------------------------------------
-  std::string board_ip = "192.168.11.11";
+//  std::string board_ip = "192.168.11.11";
+  std::string board_ip = "192.168.10.65";
   rbcp_header rbcpHeader;
   rbcpHeader.type = UDPRBCP::rbcp_ver_;
   rbcpHeader.id   = 0;

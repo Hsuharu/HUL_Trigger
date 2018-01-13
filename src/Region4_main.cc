@@ -31,7 +31,8 @@ int main(int argc, char* argv[])
 //  char* board_ip = argv[1];
   int BH2_K_Selector;
   char* board_ip                  ;
-  char fixedip[] = "192.168.11.11";
+//  char fixedip[] = "192.168.11.11";
+  char fixedip[] = "192.168.10.65";
   board_ip = fixedip;
   rbcp_header rbcpHeader;
   rbcpHeader.type = UDPRBCP::rbcp_ver_;
