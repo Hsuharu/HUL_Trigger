@@ -89,8 +89,8 @@ RGN2_1::Width_Other5         8
                          
 (Beam,TOF)_Beam               2 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_SAC                2 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_TOF                1 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_LC                 2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_TOF                2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_LC                 1 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_TOF_HT             2 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_Other4            2 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_Other5            2 ## Veto->0, On ->1, Off->2 ##

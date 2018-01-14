@@ -59,6 +59,7 @@ daq: daq_main.o $(OBJ)
 	$(CXX) -o $(BINDIR)/$@ $< $(OBJ) $(LDFLAGS)
 
 clean:
-	$(RM) $(BINDIR)/* *.o *.d *~
+	$(RM) $(BINDIR)/* *.o *.d *~ *.swp
+	find . \( -name ".*.swp" \) -exec $(RM) \{\} \;
 
 -include $(DEPENDS)
