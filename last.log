@@ -1,4 +1,4 @@
-param/TOF_OR_Trigger.txt
+param/TOF_LC_Trigger.txt
 
 RGN1::SEL_TOF                      255
 RGN1::Delay_BH1_Beam                 1
@@ -45,8 +45,8 @@ RGN2_1::Width_LC                     8
 RGN2_1::Width_TOF_HT                 8
 RGN2_1::Width_Other4                 8
 RGN2_1::Width_Other5                 8
-RGN2_1::Coin_ctrl_7                 16
-RGN2_1::Coin_coin_7                 16
+RGN2_1::Coin_ctrl_7                 24
+RGN2_1::Coin_coin_7                 24
 RGN2_2::Delay_Beam                   1
 RGN2_2::Delay_SAC                    1
 RGN2_2::Delay_TOF                    1
