@@ -4,11 +4,13 @@
 last_log=$HOME/work/HUL_Trigger/last.log
 
 function onoff(){
-  if [ "$1" == "0" ]; then echo OFF; fi
-  if [ "$1" == "1" ]; then echo ON; fi
+  if [ "$1" == "0" ]; then echo -e "\e[90mOFF\e[0m"; fi
+  if [ "$1" == "1" ]; then echo -e "\e[32mON\e[0m"; fi
 }
 
-
+while true
+do
+#date "+%Y/%m/%d %H:%M:%S"
 while read line
 do 
  Selector_PS=`echo $line | awk '$1=="RGN3::Selector_PS" {print $2}'`
@@ -98,3 +100,6 @@ do
 
 done < $last_log 
 
+sleep 30
+clear
+done
