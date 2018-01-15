@@ -1,4 +1,4 @@
-param/TOF_LC_Trigger.txt
+param/trigger_ajustment.txt
 
 RGN1::SEL_TOF                      255
 RGN1::Delay_BH1_Beam                 1
@@ -14,21 +14,21 @@ RGN1::Width_BH2_Pi                   4
 RGN1::Width_BH1_P                    4
 RGN1::Width_BH2_P                    4
 RGN1::Delay_SAC_K_Scat               1
-RGN1::Delay_TOF_K_Scat               1
+RGN1::Delay_TOF_K_Scat              13
 RGN1::Delay_LC_K_Scat                1
-RGN1::Delay_TOF_HT_K_Scat            1
+RGN1::Delay_TOF_HT_K_Scat           13
 RGN1::Delay_Other4_K_Scat            1
 RGN1::Delay_Other5_K_Scat            1
 RGN1::Width_SAC_K_Scat              12
-RGN1::Width_TOF_K_Scat              12
-RGN1::Width_Lucite_K_Scat           12
-RGN1::Width_TOF_HT_K_Scat           12
+RGN1::Width_TOF_K_Scat               1
+RGN1::Width_Lucite_K_Scat            0
+RGN1::Width_TOF_HT_K_Scat           20
 RGN1::Width_Other4_K_Scat           12
 RGN1::Width_Other5_K_Scat           12
 RGN1::Delay_K_Scat                   1
 RGN1::Width_K_Scat                  12
-RGN1::Coin_ctrl_Beam                 0
-RGN1::Coin_coin_Beam                 0
+RGN1::Coin_ctrl_Beam                 1
+RGN1::Coin_coin_Beam                 1
 RGN1::Coin_ctrl_K_Scat               0
 RGN1::Coin_coin_K_Scat               0
 RGN2_1::Delay_Beam                   1
@@ -45,8 +45,8 @@ RGN2_1::Width_LC                     8
 RGN2_1::Width_TOF_HT                 8
 RGN2_1::Width_Other4                 8
 RGN2_1::Width_Other5                 8
-RGN2_1::Coin_ctrl_7                 24
-RGN2_1::Coin_coin_7                 24
+RGN2_1::Coin_ctrl_7                  0
+RGN2_1::Coin_coin_7                  0
 RGN2_2::Delay_Beam                   1
 RGN2_2::Delay_SAC                    1
 RGN2_2::Delay_TOF                    1
@@ -125,7 +125,7 @@ RGN2_6::Width_Other4_E03             8
 RGN2_6::Width_Other5_E03             8
 RGN2_6::Coin_coin_6                  0
 RGN2_6::Coin_coin_6                  0
-RGN3::Selector_PS                   32
+RGN3::Selector_PS                    0
 RGN3::RST_PSCNT                      0
 RGN3::Delay_PS_OR                    1
 RGN3::Delay_all_Else_OR              1
@@ -137,7 +137,7 @@ RGN4::Delay_BH2                      6
 RGN4::Delay_BH2_K                    1
 RGN4::Width_BH2_K                    4
 RGN4::Selector_8                     0
-RGN4::Selector_Clock                 0
+RGN4::Selector_Clock                 1
 RGN4::Selector_Reserve2              0
 RGN3::PreScale_Beam                  0
 RGN3::PreScale_Beam_TOF              0
