@@ -59,15 +59,15 @@ RGN1::Delay_Other4_K_Scat     1
 RGN1::Delay_Other5_K_Scat     1 
                              
 RGN1::Width_SAC_K_Scat       12
-RGN1::Width_TOF_K_Scat       31 
-RGN1::Width_LC_K_Scat        31
-RGN1::Width_TOF_HT_K_Scat    32
+RGN1::Width_TOF_K_Scat        1 
+RGN1::Width_LC_K_Scat        32
+RGN1::Width_TOF_HT_K_Scat    20
 RGN1::Width_Other4_K_Scat    12
 RGN1::Width_Other5_K_Scat    12  
                                
                               
 RGN1::Delay_K_Scat            1
-RGN1::Width_K_Scat           31 
+RGN1::Width_K_Scat           12 
  
 RGN1::Coin_Beam_BH1           2 ## Veto->0, On ->1, Off->2 ## 
 RGN1::Coin_Beam_BH2           1 ## Veto->0, On ->1, Off->2 ##
@@ -270,8 +270,8 @@ RGN3::Delay_all_Else_OR       1
 RGN3::Width_Else_OR          12 
 RGN3::Delay_part_Else_OR      1
                        
-RGN3::Delay_K_Scat           13
-RGN3::Width_K_Scat           31 
+RGN3::Delay_K_Scat            6
+RGN3::Width_K_Scat            5
 
 Else_OR_selector_Beam         0   ________________________________________
 Else_OR_selector_Beam_TOF     0   |                                      |    

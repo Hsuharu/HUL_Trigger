@@ -14,42 +14,42 @@ function nimid(){
   if [ "$1" == "3" ];  then echo  "BH2_pi         "; fi
   if [ "$1" == "4" ];  then echo  "BH1_p          "; fi
   if [ "$1" == "5" ];  then echo  "BH2_p          "; fi
-  if [ "$1" == "6" ];  then echo  "SAC_K_Scat     "; fi
-  if [ "$1" == "7" ];  then echo  "TOF_K_Scat     "; fi
-  if [ "$1" == "8" ];  then echo  "LC_K_Scat      "; fi
-  if [ "$1" == "9" ];  then echo  "TOF_HT_K_Scat  "; fi
-  if [ "$1" == "10" ]; then echo  "Other4_K_Scat  "; fi
-  if [ "$1" == "11" ]; then echo  "Other5_K_Scat  "; fi
-  if [ "$1" == "12" ]; then echo  "Beam_Beam_TOF  "; fi
-  if [ "$1" == "13" ]; then echo  "SAC_or_Beam_TOF"; fi
-  if [ "$1" == "14" ]; then echo  "TOF_or_Beam_TOF"; fi
-  if [ "$1" == "15" ]; then echo  "LC_or_Beam_TOF "; fi
-  if [ "$1" == "16" ]; then echo  "TOF_HT_Beam_TOF"; fi
-  if [ "$1" == "17" ]; then echo  "Other4_Beam_TOF"; fi
-  if [ "$1" == "18" ]; then echo  "Other5_Beam_TOF"; fi
+  if [ "$1" == "6" ];  then echo  "K_Scat_SAC     "; fi
+  if [ "$1" == "7" ];  then echo  "K_Scat_TOF     "; fi
+  if [ "$1" == "8" ];  then echo  "K_Scat_LC       "; fi
+  if [ "$1" == "9" ];  then echo  "K_Scat_TOF_HT  "; fi
+  if [ "$1" == "10" ]; then echo  "K_Scat_Other4  "; fi
+  if [ "$1" == "11" ]; then echo  "K_Scat_Other5  "; fi
+  if [ "$1" == "12" ]; then echo  "Beam_TOF_Beam  "; fi
+  if [ "$1" == "13" ]; then echo  "Beam_TOF_SAC_or"; fi
+  if [ "$1" == "14" ]; then echo  "Beam_TOF_TOF_or"; fi
+  if [ "$1" == "15" ]; then echo  "Beam_TOF_LC_or "; fi
+  if [ "$1" == "16" ]; then echo  "Beam_TOF_TOF_HT"; fi
+  if [ "$1" == "17" ]; then echo  "Beam_TOF_Other4"; fi
+  if [ "$1" == "18" ]; then echo  "Beam_TOF_Other5"; fi
   if [ "$1" == "19" ]; then echo  "Beam_Coin1     "; fi
-  if [ "$1" == "20" ]; then echo  "SAC_or_Coin1   "; fi
-  if [ "$1" == "21" ]; then echo  "TOF_or_Coin1   "; fi
-  if [ "$1" == "22" ]; then echo  "LC_or_Coin1    "; fi
-  if [ "$1" == "23" ]; then echo  "TOF_HT_Coin1   "; fi
-  if [ "$1" == "24" ]; then echo  "Other4_Coin1   "; fi
-  if [ "$1" == "25" ]; then echo  "Other5_Coin1   "; fi
-  if [ "$1" == "26" ]; then echo  "Beam_E03       "; fi
-  if [ "$1" == "27" ]; then echo  "Other1_E03     "; fi
-  if [ "$1" == "28" ]; then echo  "Other2_E03     "; fi
-  if [ "$1" == "29" ]; then echo  "Other3_E03     "; fi
-  if [ "$1" == "30" ]; then echo  "Other4_E03     "; fi
-  if [ "$1" == "31" ]; then echo  "Other5_E03     "; fi
+  if [ "$1" == "20" ]; then echo  "Coin1_SAC_or   "; fi
+  if [ "$1" == "21" ]; then echo  "Coin1_TOF_or   "; fi
+  if [ "$1" == "22" ]; then echo  "Coin1_LC_or    "; fi
+  if [ "$1" == "23" ]; then echo  "Coin1_TOF_HT   "; fi
+  if [ "$1" == "24" ]; then echo  "Coin1_Other4   "; fi
+  if [ "$1" == "25" ]; then echo  "Coin1_Other5   "; fi
+  if [ "$1" == "26" ]; then echo  "E03_Beam       "; fi
+  if [ "$1" == "27" ]; then echo  "E03_Other1     "; fi
+  if [ "$1" == "28" ]; then echo  "E03_Other2     "; fi
+  if [ "$1" == "29" ]; then echo  "E03_Other3     "; fi
+  if [ "$1" == "30" ]; then echo  "E03_Other4     "; fi
+  if [ "$1" == "31" ]; then echo  "E03_Other5     "; fi
   if [ "$1" == "32" ]; then echo  "PS_OR_DLY      "; fi
-  if [ "$1" == "33" ]; then echo  "K_Scat_Else_OR "; fi
-  if [ "$1" == "34" ]; then echo  "BH2_1_DLY      "; fi
-  if [ "$1" == "35" ]; then echo  "BH2_2_DLY      "; fi
-  if [ "$1" == "36" ]; then echo  "BH2_3_DLY      "; fi
-  if [ "$1" == "37" ]; then echo  "BH2_4_DLY      "; fi
-  if [ "$1" == "38" ]; then echo  "BH2_5_DLY      "; fi
-  if [ "$1" == "39" ]; then echo  "BH2_6_DLY      "; fi
-  if [ "$1" == "40" ]; then echo  "BH2_7_DLY      "; fi
-  if [ "$1" == "41" ]; then echo  "BH2_8_DLY      "; fi
+  if [ "$1" == "33" ]; then echo  "Else_OR_K_Scat "; fi
+  if [ "$1" == "34" ]; then echo  "(BH2_1,K)       "; fi
+  if [ "$1" == "35" ]; then echo  "(BH2_2,K)       "; fi
+  if [ "$1" == "36" ]; then echo  "(BH2_3,K)       "; fi
+  if [ "$1" == "37" ]; then echo  "(BH2_4,K)       "; fi
+  if [ "$1" == "38" ]; then echo  "(BH2_5,K)       "; fi
+  if [ "$1" == "39" ]; then echo  "(BH2_6,K)       "; fi
+  if [ "$1" == "40" ]; then echo  "(BH2_7,K)       "; fi
+  if [ "$1" == "41" ]; then echo  "(BH2_8,K)       "; fi
 }
 
 while true

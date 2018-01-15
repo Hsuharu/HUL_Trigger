@@ -147,6 +147,7 @@ int main(int argc, char* argv[])
                  //     46                             // 
                  ////////////////////////////////////////
 
+  std::cout << "Successfully finished!" << std::endl;
   return 0;
 
 }// main
