@@ -51,17 +51,17 @@ RGN1::Width_BH2_P             4
                                
                                
                               
-RGN1::Delay_SAC_K_Scat        1   # 1 - 16
-RGN1::Delay_TOF_K_Scat       13
+RGN1::Delay_SAC_K_Scat        1
+RGN1::Delay_TOF_K_Scat        1
 RGN1::Delay_LC_K_Scat         1
-RGN1::Delay_TOF_HT_K_Scat    13 
+RGN1::Delay_TOF_HT_K_Scat     1
 RGN1::Delay_Other4_K_Scat     1
 RGN1::Delay_Other5_K_Scat     1 
                              
-RGN1::Width_SAC_K_Scat       12  #1 - 31
-RGN1::Width_TOF_K_Scat        1 
-RGN1::Width_LC_K_Scat        32
-RGN1::Width_TOF_HT_K_Scat    20
+RGN1::Width_SAC_K_Scat       12
+RGN1::Width_TOF_K_Scat       12
+RGN1::Width_LC_K_Scat        12
+RGN1::Width_TOF_HT_K_Scat    12
 RGN1::Width_Other4_K_Scat    12
 RGN1::Width_Other5_K_Scat    12  
                                
@@ -70,10 +70,10 @@ RGN1::Delay_K_Scat            1
 RGN1::Width_K_Scat           12 
  
 RGN1::Coin_Beam_BH1           2 ## Veto->0, On ->1, Off->2 ## 
-RGN1::Coin_Beam_BH2           1 ## Veto->0, On ->1, Off->2 ##
+RGN1::Coin_Beam_BH2           2 ## Veto->0, On ->1, Off->2 ##
 
 RGN1::Coin_KScat_SAC          2 ## Veto->0, On ->1, Off->2 ##
-RGN1::Coin_KScat_TOF          1 ## Veto->0, On ->1, Off->2 ##
+RGN1::Coin_KScat_TOF          2 ## Veto->0, On ->1, Off->2 ##
 RGN1::Coin_KScat_LC           2 ## Veto->0, On ->1, Off->2 ##  
 RGN1::Coin_KScat_TOF_HT       2 ## Veto->0, On ->1, Off->2 ## 
 RGN1::Coin_KScat_Other4       2 ## Veto->0, On ->1, Off->2 ##
@@ -102,7 +102,7 @@ RGN2_1::Width_Other5          8
                          
 (Beam,TOF)_Beam               2 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_SAC                2 ## Veto->0, On ->1, Off->2 ##
-(Beam,TOF)_TOF                2 ## Veto->0, On ->1, Off->2 ##
+(Beam,TOF)_TOF                1 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_LC                 2 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_TOF_HT             2 ## Veto->0, On ->1, Off->2 ##
 (Beam,TOF)_Other4             2 ## Veto->0, On ->1, Off->2 ##
@@ -256,13 +256,13 @@ Coin_Other5_E03               2 ## Veto->0, On ->1, Off->2 ##
 #  Region3 Else OR PreScale                                                   #
 #                                                                             #
 ###############################################################################
-RGN3::PreScale_Beam            100   ________________________________________
-RGN3::PreScale_Beam_TOF          1   |                                      |
-RGN3::PreScale_Beam_Pi           1   | Please Write Prescalefactor N  (1/N) |
-RGN3::PreScale_Beam_P            1   |                                      |
-RGN3::PreScale_Coin1             1   |        minimum is 1                  |
-RGN3::PreScale_Coin2             1   |        maximum is 2^24 -1            |
-RGN3::PreScale_For_E03           1   |______________________________________|
+RGN3::PreScale_Beam           1   ________________________________________
+RGN3::PreScale_Beam_TOF       1   |                                      |
+RGN3::PreScale_Beam_Pi        1   | Please Write Prescalefactor N  (1/N) |
+RGN3::PreScale_Beam_P         1   |                                      |
+RGN3::PreScale_Coin1          1   |        minimum is 1                  |
+RGN3::PreScale_Coin2          1   |        maximum is 2^24 -1            |
+RGN3::PreScale_For_E03        1   |______________________________________|
 
 RGN3::Delay_PS_OR             1
                          
@@ -273,8 +273,8 @@ RGN3::Delay_part_Else_OR      1
 RGN3::Delay_K_Scat            6
 RGN3::Width_K_Scat            5
 
-Else_OR_selector_Beam         1   ________________________________________
-Else_OR_selector_Beam_TOF     0   |                                      |    
+Else_OR_selector_Beam         0   ________________________________________
+Else_OR_selector_Beam_TOF     1   |                                      |    
 Else_OR_selector_Beam_Pi      0   |      Please Write   0 or 1           |   
 Else_OR_selector_Beam_P       0   |                                      |  
 Else_OR_selector_Coin1        0   |        On ->1, Off->0                | 

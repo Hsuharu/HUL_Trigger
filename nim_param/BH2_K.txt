@@ -1,0 +1,59 @@
+IOM::NIMOUT1    1            //BH2_Beam                
+IOM::NIMOUT2   34            //BH2_1_DLY               
+#IOM::NIMOUT2   35            //BH2_2_DLY               
+#IOM::NIMOUT2   36            //BH2_3_DLY               
+#IOM::NIMOUT2   37            //BH2_4_DLY               
+#IOM::NIMOUT2   38            //BH2_5_DLY               
+#IOM::NIMOUT2   39            //BH2_6_DLY              
+#IOM::NIMOUT2   40            //BH2_7_DLY              
+#IOM::NIMOUT2   41            //BH2_8_DLY          
+IOM::NIMOUT3   33            //K_Scat_Else_OR       !! param Else_Or !! 
+IOM::NIMOUT4    7            //TOF_K_Scat              
+
+                 ////////////////////////////////////////
+                 //    ID 1                            //      
+                 ////////////////////////////////////////
+                 //     0            BH1_Beam          //        
+                 //     1            BH2_Beam          //      
+                 //     2            BH1_pi            //      
+                 //     3            BH2_pi            //      
+                 //     4            BH1_p             //      
+                 //     5            BH2_p             //      
+                 //     6            SAC_K_Scat        //      
+                 //     7            TOF_K_Scat        //      
+                 //     8            LC_K_Scat         //      
+                 //     9            TOF_HT_K_Scat     //      
+                 //     10           Other4_K_Scat     //      
+                 //     11           Other5_K_Scat     //      
+                 //     12           Beam_Beam_TOF     //      
+                 //     13           SAC_or_Beam_TOF   //      
+                 //     14           TOF_or_Beam_TOF   //      
+                 //     15           LC_or_Beam_TOF    //      
+                 //     16           TOF_HT_Beam_TOF   //      
+                 //     17           Other4_Beam_TOF   //      
+                 //     18           Other5_Beam_TOF   //      
+                 //     19           Beam_Coin1        //      
+                 //     20           SAC_or_Coin1      //      
+                 //     21           TOF_or_Coin1      //      
+                 //     22           LC_or_Coin1       //      
+                 //     23           TOF_HT_Coin1      //      
+                 //     24           Other4_Coin1      //      
+                 //     25           Other5_Coin1      //      
+                 //     26           Beam_E03          //      
+                 //     27           Other1_E03        //      
+                 //     28           Other2_E03        //      
+                 //     29           Other3_E03        //      
+                 //     30           Other4_E03        //      
+                 //     31           Other5_E03        //      
+                 //     32           PS_OR_DLY         //      
+                 //     33           K_Scat_Else_OR    //      
+                 //     34           BH2_1_DLY         //      
+                 //     35           BH2_2_DLY         //      
+                 //     36           BH2_3_DLY         //      
+                 //     37           BH2_4_DLY         //      
+                 //     38           BH2_5_DLY         //      
+                 //     39           BH2_6_DLY         //     
+                 //     40           BH2_7_DLY         //     
+                 //     41           BH2_8_DLY         // 
+                 ////////////////////////////////////////
+

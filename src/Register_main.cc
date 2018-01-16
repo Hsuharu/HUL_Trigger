@@ -399,7 +399,7 @@ int main(int argc, char* argv[])
   Write( fModule,   RGN2_6::mid,   "RGN2_6::Width_Other4_E03",   RGN2_6::Width_Other4_E03,    param("RGN2_6::Width_Other4_E03"));
   Write( fModule,   RGN2_6::mid,   "RGN2_6::Width_Other5_E03",   RGN2_6::Width_Other5_E03,    param("RGN2_6::Width_Other5_E03"));
                                  
-  Write( fModule,   RGN2_6::mid,   "RGN2_6::Coin_coin_6     ",   RGN2_6::Coin_coin_6      ,   Region2_6_Coin.Ctrl6(
+  Write( fModule,   RGN2_6::mid,   "RGN2_6::Coin_ctrl_6     ",   RGN2_6::Coin_ctrl_6      ,   Region2_6_Coin.Ctrl6(
                                                                                                  param("Coin_Beam_E03")  ,
                                                                                                  param("Coin_Other1_E03"),
                                                                                                  param("Coin_Other2_E03"),
@@ -429,7 +429,6 @@ int main(int argc, char* argv[])
                                                                     | param("Else_OR_selector_For_E03")
                                                                          );
   
-  Write( fModule,   RGN3::mid,  "RGN3::RST_PSCNT          ",  RGN3::RST_PSCNT          ,               1);
                                
   Write( fModule,   RGN3::mid,  "RGN3::Delay_PS_OR        ",  RGN3::Delay_PS_OR        ,      param("RGN3::Delay_PS_OR"));
                               
@@ -468,6 +467,7 @@ int main(int argc, char* argv[])
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Coin1     ",  RGN3::PreScale_Coin1     ,        param("RGN3::PreScale_Coin1")    -1 );
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Coin2     ",  RGN3::PreScale_Coin2     ,        param("RGN3::PreScale_Coin2")    -1 );
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_For_E03   ",  RGN3::PreScale_For_E03   ,        param("RGN3::PreScale_For_E03")  -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::RST_PSCNT          ",  RGN3::RST_PSCNT          ,               1);
   //-------------------------------------------------------------------------
   // IOM : In/Out Maneger ( NIMOUT Signal Select ) Module
   //-------------------------------------------------------------------------

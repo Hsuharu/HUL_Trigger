@@ -7,6 +7,12 @@ function onoff(){
     if [ "$1" == "1" ]; then echo -e "\e[32mON\e[0m"; fi
 }
 
+function coin(){
+    if [ "$1" == "2" ]; then echo -e "\e[90mOFF\e[0m"; fi
+    if [ "$1" == "0" ]; then echo -e "\e[90mVeto\e[0m"; fi
+    if [ "$1" == "1" ]; then echo -e "\e[32mON\e[0m"; fi
+}
+
 
 while true
 do
@@ -17,6 +23,18 @@ do
 
     while read line
     do 
+	Beam_BH1=`echo $line | awk '$1=="RGN1::Coin_ctrl_Beam" {print $2}'`
+	if [ "$Beam_BH1" != "" ]; then
+	    Beam_BH1=`onoff $(($Beam_BH1>>1 & 1))`
+	    buf=$buf"Beam_BH1\t$Beam_BH1\n"
+	fi
+
+	Beam_BH2=`echo $line | awk '$1=="RGN1::Coin_ctrl_Beam" {print $2}'`
+	if [ "$Beam_BH2" != "" ]; then
+	    Beam_BH2=`onoff $(($Beam_BH2 & 1))`
+	    buf=$buf"Beam_BH2\t$Beam_BH2\n"
+	fi
+
 	Selector_PS=`echo $line | awk '$1=="RGN3::Selector_PS" { print $2 }'`
 	if [ "$Selector_PS" != "" ]; then
 	    Beam=`onoff $(($Selector_PS>>6 & 1))`

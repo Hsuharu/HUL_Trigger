@@ -1,6 +1,6 @@
-param/nimOUT.txt
+nim_param/c0.txt
 
-IOM::NIMOUT1                        33
-IOM::NIMOUT2                        33
-IOM::NIMOUT3                         9
-IOM::NIMOUT4                         7
+IOM::NIMOUT1                        12
+IOM::NIMOUT2                        13
+IOM::NIMOUT3                        14
+IOM::NIMOUT4                        15
