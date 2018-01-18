@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 IOM::NIMOUT1   12            //BH2_Beam                
 IOM::NIMOUT2   14            //TOF_K_Scat          
 IOM::NIMOUT3   13 
 IOM::NIMOUT4   16            //TOF_HT_K_Scat     
                
+=======
+IOM::NIMOUT1    1            //BH2_Beam                
+IOM::NIMOUT2    7            //TOF_K_Scat          
+IOM::NIMOUT3    8            //LC_K_Scat           
+IOM::NIMOUT4    9            //TOF_HT_K_Scat     
+
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
                  ////////////////////////////////////////
                  //    ID 1                            //      
                  ////////////////////////////////////////

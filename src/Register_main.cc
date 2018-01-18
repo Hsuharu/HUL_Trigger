@@ -431,6 +431,7 @@ int main(int argc, char* argv[])
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Coin1     ",  RGN3::PreScale_Coin1     ,        param("RGN3::PreScale_Coin1")    -1 );
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_For_E03   ",  RGN3::PreScale_For_E03   ,        param("RGN3::PreScale_For_E03")  -1 );
   Write( fModule,   RGN3::mid,  "RGN3::RST_PSCNT          ",  RGN3::RST_PSCNT          ,               1);
+<<<<<<< HEAD
 
   //-------------------------------------------------------------------------
   // Extra Line!!! [RGN2_5 : Region2_5 ( Coin2 ) Module]
@@ -475,6 +476,8 @@ int main(int argc, char* argv[])
   
   
   
+=======
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
   //-------------------------------------------------------------------------
   // IOM : In/Out Maneger ( NIMOUT Signal Select ) Module
   //-------------------------------------------------------------------------

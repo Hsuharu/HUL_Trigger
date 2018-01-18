@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 IOM::NIMOUT1   12            //BH2_Beam                
+=======
+IOM::NIMOUT1    1            //BH2_Beam                
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
 IOM::NIMOUT2   32            //PS_OR_DLY                             
 IOM::NIMOUT3   33            //K_Scat_Else_OR                               
 IOM::NIMOUT4    7            //TOF_K_Scat              

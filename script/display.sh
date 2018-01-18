@@ -13,6 +13,7 @@ function coin(){
     if [ "$1" == "1" ]; then echo -e "\e[32mON\e[0m"; fi
 }
 
+<<<<<<< HEAD
 function coin_beam(){
      if [ "$1" == "3" ]; then echo -e "\e[31mCoin\e[0m"; fi
      if [ "$1" == "1" ]; then echo -e "\e[31mBH2\e[0m"; fi
@@ -26,6 +27,8 @@ function bcoin(){
 }
 
 
+=======
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
 
 while true
 do
@@ -36,11 +39,25 @@ do
 
     while read line
     do 
+<<<<<<< HEAD
         defBeam=`echo $line | awk '$1=="RGN1::Coin_ctrl_Beam" { print $2 }'`
        	    if [ "$defBeam" != "" ]; then
        	        defBeam=`coin_beam $(($defBeam))`
        	        buf=$buf"Beam is\t$defBeam\n\n"
        	    fi
+=======
+	Beam_BH1=`echo $line | awk '$1=="RGN1::Coin_ctrl_Beam" {print $2}'`
+	if [ "$Beam_BH1" != "" ]; then
+	    Beam_BH1=`onoff $(($Beam_BH1>>1 & 1))`
+	    buf=$buf"Beam_BH1\t$Beam_BH1\n"
+	fi
+
+	Beam_BH2=`echo $line | awk '$1=="RGN1::Coin_ctrl_Beam" {print $2}'`
+	if [ "$Beam_BH2" != "" ]; then
+	    Beam_BH2=`onoff $(($Beam_BH2 & 1))`
+	    buf=$buf"Beam_BH2\t$Beam_BH2\n"
+	fi
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
 
 	Selector_PS=`echo $line | awk '$1=="RGN3::Selector_PS" { print $2 }'`
 	if [ "$Selector_PS" != "" ]; then
