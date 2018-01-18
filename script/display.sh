@@ -7,6 +7,25 @@ function onoff(){
     if [ "$1" == "1" ]; then echo -e "\e[32mON\e[0m"; fi
 }
 
+function coin(){
+    if [ "$1" == "2" ]; then echo -e "\e[90mOFF\e[0m"; fi
+    if [ "$1" == "0" ]; then echo -e "\e[90mVeto\e[0m"; fi
+    if [ "$1" == "1" ]; then echo -e "\e[32mON\e[0m"; fi
+}
+
+function coin_beam(){
+     if [ "$1" == "3" ]; then echo -e "\e[31mCoin\e[0m"; fi
+     if [ "$1" == "1" ]; then echo -e "\e[31mBH2\e[0m"; fi
+     if [ "$1" == "2" ]; then echo -e "\e[31mBH1\e[0m"; fi
+}
+
+function bcoin(){
+     if [ "$1" == "3" ]; then echo -e "\e[32mCoin\e[0m"; fi
+     if [ "$1" == "2" ]; then echo -e "\e[32mBH1\e[0m"; fi
+     if [ "$1" == "1" ]; then echo -e "\e[32mBH2\e[0m"; fi
+}
+
+
 
 while true
 do
@@ -17,6 +36,12 @@ do
 
     while read line
     do 
+        defBeam=`echo $line | awk '$1=="RGN1::Coin_ctrl_Beam" { print $2 }'`
+       	    if [ "$defBeam" != "" ]; then
+       	        defBeam=`coin_beam $(($defBeam))`
+       	        buf=$buf"Beam is\t$defBeam\n\n"
+       	    fi
+
 	Selector_PS=`echo $line | awk '$1=="RGN3::Selector_PS" { print $2 }'`
 	if [ "$Selector_PS" != "" ]; then
 	    Beam=`onoff $(($Selector_PS>>6 & 1))`
@@ -24,14 +49,14 @@ do
 	    Beam_pi=`onoff $(($Selector_PS>>4 & 1))`
 	    Beam_p=`onoff $(($Selector_PS>>3 & 1))`
 	    Coin1=`onoff $(($Selector_PS>>2 & 1))`
-	    Coin2=`onoff $(($Selector_PS>>1 & 1))`
+#	    Coin2=`onoff $(($Selector_PS>>1 & 1))`
 	    E03=`onoff $(($Selector_PS&1))`
 	    buf=$buf"Beam\t\t$Beam\n"
 	    buf=$buf"Beam_TOF\t$Beam_TOF\n"
 	    buf=$buf"Beam_pi\t\t$Beam_pi\n"
 	    buf=$buf"Beam_p\t\t$Beam_p\n"
 	    buf=$buf"Coin1\t\t$Coin1\n"
-	    buf=$buf"Coin2\t\t$Coin2\n"
+#	    buf=$buf"Coin2\t\t$Coin2\n"
 	    buf=$buf"E03\t\t$E03\n"
 	fi
 
@@ -92,15 +117,27 @@ do
 	    buf=$buf"Coin1_PS\t$(($Coin1_PS + 1))\n"
 	fi
 
-	Coin2_PS=`echo $line | awk '$1=="RGN3::PreScale_Coin2" {print $2}'`
-	if [ "$Coin2_PS" != "" ]; then
-	    buf=$buf"Coin2_PS\t$(($Coin2_PS + 1))\n"
-	fi
+#	Coin2_PS=`echo $line | awk '$1=="RGN3::PreScale_Coin2" {print $2}'`
+#	if [ "$Coin2_PS" != "" ]; then
+#	    buf=$buf"Coin2_PS\t$(($Coin2_PS + 1))\n"
+#	fi
 
 	For_E03_PS=`echo $line | awk '$1=="RGN3::PreScale_For_E03" {print $2}'`
 	if [ "$For_E03_PS" != "" ]; then
 	    buf=$buf"For_E03_PS\t$(($For_E03_PS + 1))"
 	fi
+
+	ExTrigger_PS=`echo $line | awk '$1=="RGN3::Selector_PS" { print $2 }'`
+	if [ "$Selector_PS" != "" ]; then
+	    ExTrigger=`onoff $(($ExTrigger_PS>>2 & 1))`
+	    buf=$buf"ExTrigger\t$ExTrigger\n"
+	fi
+
+	FreeTrigger=`echo $line | awk '$1=="Extra_Line_PreScale" {print $2}'`
+	if [ "$FreeTrigger" != "" ]; then
+	    buf=$buf"ExTrigger\t$(($FreeTrigger + 1))\n"
+	fi
+
 	
     done < $last_log 
 

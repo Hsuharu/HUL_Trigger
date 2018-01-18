@@ -225,7 +225,7 @@ Coin_Other5_E03               2     ## Veto->0, On ->1, Off->2 ##
 #  Region3 Else OR PreScale                                                   #
 #                                                                             #
 ###############################################################################
-RGN3::PreScale_Beam              100  ________________________________________
+RGN3::PreScale_Beam                1  ________________________________________
 RGN3::PreScale_Beam_TOF            1  |                                      |
 RGN3::PreScale_Beam_Pi             1  | Please Write Prescalefactor N  (1/N) |
 RGN3::PreScale_Beam_P              1  |                                      |
@@ -244,8 +244,8 @@ RGN3::Delay_K_Scat                 1    #KScat pre
 RGN3::Width_K_Scat                31    #KScat pre
 
 #BH2_K's Value
-#RGN3::Delay_K_Scat                 1     
-#RGN3::Width_K_Scat                11   
+#RGN3::Delay_K_Scat                1     
+#RGN3::Width_K_Scat               11   
 
 Else_OR_selector_Beam              0   ________________________________________
 Else_OR_selector_Beam_TOF          0   |                                      |    
@@ -277,7 +277,7 @@ Selector_(BH2_6,K)                 0   |                                      |
 Selector_(BH2_7,K)                 0   |          On ->1, Off->0              | 
 Selector_(BH2_8,K)                 0   |                                      | 
 Selector_Clock                     0   |                                      | 
-Selector_Reserve2                  0   |______________________________________|   
+Selector_Reserve2                  1   |______________________________________|   
 
 ###############################################################################
 #                                                                             #
@@ -309,6 +309,6 @@ Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##
 
 Extra_Line_PreScale              1 
-Extra_Line_Selector              1     ##    On ->1, Off->0    ##           
+Extra_Line_Selector              0     ##    On ->1, Off->0    ##           
 
 

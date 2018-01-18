@@ -12,10 +12,13 @@ OBJ		= $(SRC:.cc=.o)
 
 #all: Register Region1 Region2_1 Region2_2 Region2_3 Region2_4 Region2_5 Region2_6 Region3 Region4 debug set_nimio sel_TOF_seg reconfig_fpga daq
 #all: Register Region1 Region2_1 Region2_2 Region2_3 Region2_4 Region2_5 Region2_6 Region3 Region4 debug nimIO sel_TOF_seg reconfig_fpga daq
-all: Register debug nimIO sel_TOF_seg reconfig_fpga daq
+all: Register e03Register debug nimIO sel_TOF_seg reconfig_fpga daq
 #all: Region1 Region2_1 Region2_2 Region2_3 Region2_4 Region2_5 Region2_6 Region3 Region4 debug set_nimio sel_TOF_seg reconfig_fpga daq
 
 Register: Register_main.o $(OBJ)
+	$(CXX) -o $(BINDIR)/$@ $< $(OBJ) $(LDFLAGS)
+
+e03Register: e03Register_main.o $(OBJ)
 	$(CXX) -o $(BINDIR)/$@ $< $(OBJ) $(LDFLAGS)
 
 #Region1: Region1_main.o $(OBJ)

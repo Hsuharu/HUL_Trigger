@@ -195,6 +195,35 @@ Coin1_Other5                  2     ## Veto->0, On ->1, Off->2 ##
 
 ###############################################################################
 #                                                                             #
+#  Region2_5 Coin2                                                            #
+#                                                                             #
+###############################################################################
+RGN2_5::Delay_Beam            1
+RGN2_5::Delay_SAC             1
+RGN2_5::Delay_TOF             1
+RGN2_5::Delay_LC              1
+RGN2_5::Delay_TOF_HT          1
+RGN2_5::Delay_Other4          1
+RGN2_5::Delay_Other5          1
+                        
+RGN2_5::Width_Beam            8
+RGN2_5::Width_SAC             8
+RGN2_5::Width_TOF             8
+RGN2_5::Width_LC              8
+RGN2_5::Width_TOF_HT          8
+RGN2_5::Width_Other4          8
+RGN2_5::Width_Other5          8
+                         
+Coin2_Beam                    2     ## Veto->0, On ->1, Off->2 ##
+Coin2_SAC                     2     ## Veto->0, On ->1, Off->2 ##
+Coin2_TOF                     2     ## Veto->0, On ->1, Off->2 ##
+Coin2_LC                      2     ## Veto->0, On ->1, Off->2 ##
+Coin2_TOF_HT                  2     ## Veto->0, On ->1, Off->2 ##
+Coin2_Other4                  2     ## Veto->0, On ->1, Off->2 ##
+Coin2_Other5                  2     ## Veto->0, On ->1, Off->2 ##
+
+###############################################################################
+#                                                                             #
 #  Region2_6 E03                                                              #
 #                                                                             #
 ###############################################################################
@@ -230,7 +259,7 @@ RGN3::PreScale_Beam_TOF            1  |                                      |
 RGN3::PreScale_Beam_Pi             1  | Please Write Prescalefactor N  (1/N) |
 RGN3::PreScale_Beam_P              1  |                                      |
 RGN3::PreScale_Coin1               1  |        minimum is 1                  |
-                                      |        maximum is 2^24 -1            |
+RGN3::PreScale_Coin2               1  |        maximum is 2^24 -1            |
 RGN3::PreScale_For_E03             1  |______________________________________|
 
 RGN3::Delay_PS_OR                  1
@@ -247,13 +276,13 @@ RGN3::Width_K_Scat                31    #KScat pre
 #RGN3::Delay_K_Scat                 1     
 #RGN3::Width_K_Scat                11   
 
-Else_OR_selector_Beam              0   ________________________________________
-Else_OR_selector_Beam_TOF          0   |                                      |    
-Else_OR_selector_Beam_Pi           0   |      Please Write   0 or 1           |   
-Else_OR_selector_Beam_P            0   |                                      |  
+Else_OR_selector_Beam              1   ________________________________________
+Else_OR_selector_Beam_TOF          1   |                                      |    
+Else_OR_selector_Beam_Pi           1   |      Please Write   0 or 1           |   
+Else_OR_selector_Beam_P            1   |                                      |  
 Else_OR_selector_Coin1             0   |        On ->1, Off->0                | 
-Else_OR_selector_For_E03           0   |                                      | 
-                                       |______________________________________|   
+Else_OR_selector_Coin2             0   |                                      | 
+Else_OR_selector_For_E03           0   |______________________________________|   
 
 ###############################################################################
 #                                                                             #
@@ -268,47 +297,13 @@ RGN4::Width_BH2_K                 12
 RGN1::Delay_K_Scat                 1    # KScat 
 RGN1::Width_K_Scat                11    # KScat
 
-Selector_(BH2_1,K)                 0   ________________________________________
-Selector_(BH2_2,K)                 0   |                                      |    
-Selector_(BH2_3,K)                 0   |                                      |   
-Selector_(BH2_4,K)                 0   |                                      |  
-Selector_(BH2_5,K)                 0   |        Please Write   0 or 1         | 
-Selector_(BH2_6,K)                 0   |                                      | 
-Selector_(BH2_7,K)                 0   |          On ->1, Off->0              | 
-Selector_(BH2_8,K)                 0   |                                      | 
+Selector_(BH2_1,K)                 1   ________________________________________
+Selector_(BH2_2,K)                 1   |                                      |    
+Selector_(BH2_3,K)                 1   |                                      |   
+Selector_(BH2_4,K)                 1   |                                      |  
+Selector_(BH2_5,K)                 1   |        Please Write   0 or 1         | 
+Selector_(BH2_6,K)                 1   |                                      | 
+Selector_(BH2_7,K)                 1   |          On ->1, Off->0              | 
+Selector_(BH2_8,K)                 1   |                                      | 
 Selector_Clock                     0   |                                      | 
 Selector_Reserve2                  0   |______________________________________|   
-
-###############################################################################
-#                                                                             #
-#  Extra Line for Free Trigger (Region2_5)                                    #
-#                                                                             #
-###############################################################################
-Extra_Line_Dealy_Beam            1
-Extra_Line_Dealy_SAC             1
-Extra_Line_Dealy_TOF             1
-Extra_Line_Dealy_LC              1
-Extra_Line_Dealy_TOF_HT          1
-Extra_Line_Dealy_Other4          1
-Extra_Line_Dealy_Other5          1
-                        
-Extra_Line_Width_Beam            8
-Extra_Line_Width_SAC             8
-Extra_Line_Width_TOF             8
-Extra_Line_Width_LC              8
-Extra_Line_Width_TOF_HT          8
-Extra_Line_Width_Other4          8
-Extra_Line_Width_Other5          8
-                         
-Extra_Line_Beam                  1     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_SAC                   2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_TOF                   2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_LC                    2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_TOF_HT                2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##
-
-Extra_Line_PreScale              1 
-Extra_Line_Selector              1     ##    On ->1, Off->0    ##           
-
-

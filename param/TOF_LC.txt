@@ -67,8 +67,8 @@ RGN1::Width_Other5_K_Scat    12
                                
                               
  
-RGN1::Coin_Beam_BH1           2     ## Veto->0, On ->1, Off->2 ## 
-RGN1::Coin_Beam_BH2           1     ## Veto->0, On ->1, Off->2 ##
+RGN1::Coin_Beam_BH1           1     ## Veto->0, On ->1, Off->2 ## 
+RGN1::Coin_Beam_BH2           2     ## Veto->0, On ->1, Off->2 ##
 
 RGN1::Coin_KScat_SAC          0     ## Veto->0, On ->1, Off->2 ##
 RGN1::Coin_KScat_TOF          1     ## Veto->0, On ->1, Off->2 ##
@@ -241,11 +241,11 @@ RGN3::Delay_part_Else_OR           3    // Else_Or Only
                        
 #Real Value
 RGN3::Delay_K_Scat                 1    #KScat pre  
-RGN3::Width_K_Scat                31    #KScat pre
+RGN3::Width_K_Scat                 0    #KScat pre
 
 #BH2_K's Value
 #RGN3::Delay_K_Scat                 1     
-#RGN3::Width_K_Scat                11   
+#RGN3::Width_K_Scat                11
 
 Else_OR_selector_Beam              0   ________________________________________
 Else_OR_selector_Beam_TOF          0   |                                      |    
@@ -260,24 +260,24 @@ Else_OR_selector_For_E03           0   |                                      |
 #  Region4 BH2_K  Clock Reserve2                                              #
 #                                                                             #
 ###############################################################################
-RGN4::Delay_BH2                    9
+RGN4::Delay_BH2                   9
 
-RGN4::Delay_BH2_K                 11
-RGN4::Width_BH2_K                 12
+RGN4::Delay_BH2_K                11
+RGN4::Width_BH2_K                12
 
-RGN1::Delay_K_Scat                 1    # KScat 
-RGN1::Width_K_Scat                11    # KScat
+RGN1::Delay_K_Scat                1    # KScat 
+RGN1::Width_K_Scat               11    # KScat
 
-Selector_(BH2_1,K)                 0   ________________________________________
-Selector_(BH2_2,K)                 0   |                                      |    
-Selector_(BH2_3,K)                 0   |                                      |   
-Selector_(BH2_4,K)                 0   |                                      |  
-Selector_(BH2_5,K)                 0   |        Please Write   0 or 1         | 
-Selector_(BH2_6,K)                 0   |                                      | 
-Selector_(BH2_7,K)                 0   |          On ->1, Off->0              | 
-Selector_(BH2_8,K)                 0   |                                      | 
-Selector_Clock                     0   |                                      | 
-Selector_Reserve2                  0   |______________________________________|   
+Selector_(BH2_1,K)                0   ________________________________________
+Selector_(BH2_2,K)                0   |                                      |    
+Selector_(BH2_3,K)                0   |                                      |   
+Selector_(BH2_4,K)                0   |                                      |  
+Selector_(BH2_5,K)                0   |        Please Write   0 or 1         | 
+Selector_(BH2_6,K)                0   |                                      | 
+Selector_(BH2_7,K)                0   |          On ->1, Off->0              | 
+Selector_(BH2_8,K)                0   |                                      | 
+Selector_Clock                    0   |                                      | 
+Selector_Reserve2                 0   |______________________________________|   
 
 ###############################################################################
 #                                                                             #
@@ -300,10 +300,10 @@ Extra_Line_Width_TOF_HT          8
 Extra_Line_Width_Other4          8
 Extra_Line_Width_Other5          8
                          
-Extra_Line_Beam                  1     ## Veto->0, On ->1, Off->2 ##
+Extra_Line_Beam                  2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_SAC                   2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_TOF                   2     ## Veto->0, On ->1, Off->2 ##
-Extra_Line_LC                    2     ## Veto->0, On ->1, Off->2 ##
+Extra_Line_TOF                   1     ## Veto->0, On ->1, Off->2 ##
+Extra_Line_LC                    1     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_TOF_HT                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##

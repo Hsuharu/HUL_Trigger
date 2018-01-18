@@ -276,7 +276,7 @@ Selector_(BH2_5,K)                 0   |        Please Write   0 or 1         |
 Selector_(BH2_6,K)                 0   |                                      | 
 Selector_(BH2_7,K)                 0   |          On ->1, Off->0              | 
 Selector_(BH2_8,K)                 0   |                                      | 
-Selector_Clock                     0   |                                      | 
+Selector_Clock                     1   |                                      | 
 Selector_Reserve2                  0   |______________________________________|   
 
 ###############################################################################
@@ -309,6 +309,6 @@ Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##
 
 Extra_Line_PreScale              1 
-Extra_Line_Selector              1     ##    On ->1, Off->0    ##           
+Extra_Line_Selector              0     ##    On ->1, Off->0    ##           
 
 

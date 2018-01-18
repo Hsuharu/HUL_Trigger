@@ -67,8 +67,8 @@ RGN1::Width_Other5_K_Scat    12
                                
                               
  
-RGN1::Coin_Beam_BH1           2     ## Veto->0, On ->1, Off->2 ## 
-RGN1::Coin_Beam_BH2           1     ## Veto->0, On ->1, Off->2 ##
+RGN1::Coin_Beam_BH1           1     ## Veto->0, On ->1, Off->2 ## 
+RGN1::Coin_Beam_BH2           2     ## Veto->0, On ->1, Off->2 ##
 
 RGN1::Coin_KScat_SAC          0     ## Veto->0, On ->1, Off->2 ##
 RGN1::Coin_KScat_TOF          1     ## Veto->0, On ->1, Off->2 ##
@@ -241,11 +241,11 @@ RGN3::Delay_part_Else_OR           3    // Else_Or Only
                        
 #Real Value
 RGN3::Delay_K_Scat                 1    #KScat pre  
-RGN3::Width_K_Scat                31    #KScat pre
+RGN3::Width_K_Scat                 0    #KScat pre
 
 #BH2_K's Value
 #RGN3::Delay_K_Scat                 1     
-#RGN3::Width_K_Scat                11   
+#RGN3::Width_K_Scat                11
 
 Else_OR_selector_Beam              0   ________________________________________
 Else_OR_selector_Beam_TOF          0   |                                      |    

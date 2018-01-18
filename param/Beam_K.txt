@@ -254,7 +254,6 @@ Else_OR_selector_Beam_P            0   |                                      |
 Else_OR_selector_Coin1             0   |        On ->1, Off->0                | 
 Else_OR_selector_For_E03           0   |                                      | 
                                        |______________________________________|   
-
 ###############################################################################
 #                                                                             #
 #  Region4 BH2_K  Clock Reserve2                                              #
@@ -268,14 +267,14 @@ RGN4::Width_BH2_K                 12
 RGN1::Delay_K_Scat                 1    # KScat 
 RGN1::Width_K_Scat                11    # KScat
 
-Selector_(BH2_1,K)                 0   ________________________________________
-Selector_(BH2_2,K)                 0   |                                      |    
-Selector_(BH2_3,K)                 0   |                                      |   
-Selector_(BH2_4,K)                 0   |                                      |  
-Selector_(BH2_5,K)                 0   |        Please Write   0 or 1         | 
-Selector_(BH2_6,K)                 0   |                                      | 
-Selector_(BH2_7,K)                 0   |          On ->1, Off->0              | 
-Selector_(BH2_8,K)                 0   |                                      | 
+Selector_(BH2_1,K)                 1   ________________________________________
+Selector_(BH2_2,K)                 1   |                                      |    
+Selector_(BH2_3,K)                 1   |                                      |   
+Selector_(BH2_4,K)                 1   |                                      |  
+Selector_(BH2_5,K)                 1   |        Please Write   0 or 1         | 
+Selector_(BH2_6,K)                 1   |                                      | 
+Selector_(BH2_7,K)                 1   |          On ->1, Off->0              | 
+Selector_(BH2_8,K)                 1   |                                      | 
 Selector_Clock                     0   |                                      | 
 Selector_Reserve2                  0   |______________________________________|   
 
@@ -309,6 +308,6 @@ Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##
 
 Extra_Line_PreScale              1 
-Extra_Line_Selector              1     ##    On ->1, Off->0    ##           
+Extra_Line_Selector              0     ##    On ->1, Off->0    ##           
 
 

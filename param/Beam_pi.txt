@@ -225,7 +225,7 @@ Coin_Other5_E03               2     ## Veto->0, On ->1, Off->2 ##
 #  Region3 Else OR PreScale                                                   #
 #                                                                             #
 ###############################################################################
-RGN3::PreScale_Beam              100  ________________________________________
+RGN3::PreScale_Beam                1  ________________________________________
 RGN3::PreScale_Beam_TOF            1  |                                      |
 RGN3::PreScale_Beam_Pi             1  | Please Write Prescalefactor N  (1/N) |
 RGN3::PreScale_Beam_P              1  |                                      |
@@ -249,7 +249,7 @@ RGN3::Width_K_Scat                31    #KScat pre
 
 Else_OR_selector_Beam              0   ________________________________________
 Else_OR_selector_Beam_TOF          0   |                                      |    
-Else_OR_selector_Beam_Pi           0   |      Please Write   0 or 1           |   
+Else_OR_selector_Beam_Pi           1   |      Please Write   0 or 1           |   
 Else_OR_selector_Beam_P            0   |                                      |  
 Else_OR_selector_Coin1             0   |        On ->1, Off->0                | 
 Else_OR_selector_For_E03           0   |                                      | 
@@ -309,6 +309,6 @@ Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##
 
 Extra_Line_PreScale              1 
-Extra_Line_Selector              1     ##    On ->1, Off->0    ##           
+Extra_Line_Selector              0     ##    On ->1, Off->0    ##           
 
 

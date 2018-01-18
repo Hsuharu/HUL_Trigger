@@ -1,6 +1,6 @@
-param/nimOUT.txt
+nim_param/coin1.txt
 
-IOM::NIMOUT1                        33
-IOM::NIMOUT2                        33
-IOM::NIMOUT3                         9
-IOM::NIMOUT4                         7
+IOM::NIMOUT1                        19
+IOM::NIMOUT2                        21
+IOM::NIMOUT3                        24
+IOM::NIMOUT4                        23

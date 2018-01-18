@@ -247,7 +247,7 @@ RGN3::Width_K_Scat                31    #KScat pre
 #RGN3::Delay_K_Scat                 1     
 #RGN3::Width_K_Scat                11   
 
-Else_OR_selector_Beam              0   ________________________________________
+Else_OR_selector_Beam              1   ________________________________________
 Else_OR_selector_Beam_TOF          0   |                                      |    
 Else_OR_selector_Beam_Pi           0   |      Please Write   0 or 1           |   
 Else_OR_selector_Beam_P            0   |                                      |  
@@ -309,6 +309,6 @@ Extra_Line_Other4                2     ## Veto->0, On ->1, Off->2 ##
 Extra_Line_Other5                2     ## Veto->0, On ->1, Off->2 ##
 
 Extra_Line_PreScale              1 
-Extra_Line_Selector              1     ##    On ->1, Off->0    ##           
+Extra_Line_Selector              0     ##    On ->1, Off->0    ##           
 
 
