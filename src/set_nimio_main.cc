@@ -1,7 +1,56 @@
-IOM::NIMOUT1    33 
-IOM::NIMOUT2    33 
-IOM::NIMOUT3     9 
-IOM::NIMOUT4     7 
+#include <iostream>
+#include <cstdio>
+
+#include "RegisterMap.hh"
+#include "ProbeMap.hh"
+#include "DelayValue.hh"
+#include "PreScaleValue.hh"
+#include "network.hh"
+#include "UDPRBCP.hh"
+#include "CommandMan.hh"
+#include "FPGAModule.hh"
+#include "CoinModule.hh"
+#include "rbcp.h"
+#include "errno.h"
+#include "daq_funcs.hh"
+
+using namespace HUL_Trigger;
+using namespace Probe;
+using namespace DelayValue;
+int main(int argc, char* argv[])
+{
+//  if(1 == argc){
+  if(1 != argc){
+    std::cout << "Usage\n";
+//    std::cout << "hul_main [IP address]" << std::endl;
+    std::cout << "ONLY_hul_main" << std::endl;
+    return 0;
+  }// usage
+  
+// body ------------------------------------------------------
+//  char* board_ip = argv[1];
+  char* board_ip                  ;
+//  char fixedip[] = "192.168.11.11";
+  char fixedip[] = "192.168.10.65";
+  board_ip = fixedip;
+  rbcp_header rbcpHeader;
+  rbcpHeader.type = UDPRBCP::rbcp_ver_;
+  rbcpHeader.id   = 0;
+
+  FPGAModule fModule(board_ip, udp_port, &rbcpHeader, 0);
+
+//-------------------------------------------------------------------------
+// IOM : In/Out Maneger ( NIMOUT Signal Select ) Module
+//-------------------------------------------------------------------------
+//  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT1  ,          0b100000);
+//  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT2  ,          0b011111);
+//  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT3  ,          0b001110);
+//  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT4  ,          0b100101);
+
+  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT1  ,        ID1::BH1_Beam);
+  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT2  ,        ID1::BH2_Beam);
+  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT3  ,        ID1::BH1_pi);
+  fModule.WriteModule(   IOM::mid,  IOM::NIMOUT4  ,        ID1::BH2_pi);
 
                  ////////////////////////////////////////
                  //    ID 1                            //      
@@ -55,3 +104,6 @@ IOM::NIMOUT4     7
                  //     46                             // 
                  ////////////////////////////////////////
 
+  return 0;
+
+}// main
