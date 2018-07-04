@@ -435,6 +435,7 @@ int main(int argc, char* argv[])
   Write( fModule,   RGN4::mid,  "RGN4::Selector_Clock   " ,  RGN4::Selector_Clock    ,     param("Selector_Clock"));
   Write( fModule,   RGN4::mid,  "RGN4::Selector_Reserve2" ,  RGN4::Selector_Reserve2 ,     param("Selector_Reserve2"));
 
+<<<<<<< HEAD
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam      ",  RGN3::PreScale_Beam      ,        param("RGN3::PreScale_Beam")     -1 , 3);
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam_TOF  ",  RGN3::PreScale_Beam_TOF  ,        param("RGN3::PreScale_Beam_TOF") -1 , 3);
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam_Pi   ",  RGN3::PreScale_Beam_Pi   ,        param("RGN3::PreScale_Beam_Pi")  -1 , 3);
@@ -442,6 +443,16 @@ int main(int argc, char* argv[])
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_Coin1     ",  RGN3::PreScale_Coin1     ,        param("RGN3::PreScale_Coin1")    -1 , 3);
   Write( fModule,   RGN3::mid,  "RGN3::PreScale_For_E03   ",  RGN3::PreScale_For_E03   ,        param("RGN3::PreScale_For_E03")  -1 , 3);
   Write( fModule,   RGN3::mid,  "RGN3::RST_PSCNT          ",  RGN3::RST_PSCNT          ,               1);
+=======
+  Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam      ",  RGN3::PreScale_Beam      ,        param("RGN3::PreScale_Beam")     -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam_TOF  ",  RGN3::PreScale_Beam_TOF  ,        param("RGN3::PreScale_Beam_TOF") -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam_Pi   ",  RGN3::PreScale_Beam_Pi   ,        param("RGN3::PreScale_Beam_Pi")  -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::PreScale_Beam_P    ",  RGN3::PreScale_Beam_P    ,        param("RGN3::PreScale_Beam_P")   -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::PreScale_Coin1     ",  RGN3::PreScale_Coin1     ,        param("RGN3::PreScale_Coin1")    -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::PreScale_For_E03   ",  RGN3::PreScale_For_E03   ,        param("RGN3::PreScale_For_E03")  -1 );
+  Write( fModule,   RGN3::mid,  "RGN3::RST_PSCNT          ",  RGN3::RST_PSCNT          ,               1);
+<<<<<<< HEAD
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 
   //-------------------------------------------------------------------------
   // Extra Line!!! [RGN2_5 : Region2_5 ( Coin2 ) Module]
@@ -462,6 +473,7 @@ int main(int argc, char* argv[])
   Write( fModule,   RGN2_5::mid,   "Extra_Line_Width_Other4 "     ,   RGN2_5::Width_Other4     ,   param("Extra_Line_Width_Other4"));
   Write( fModule,   RGN2_5::mid,   "Extra_Line_Width_Other5 "     ,   RGN2_5::Width_Other5     ,   param("Extra_Line_Width_Other5"));
                                  
+<<<<<<< HEAD
 //  Write( fModule,   RGN2_5::mid,   "RGN2_5::Coin_ctrl_7 "     ,   RGN2_5::Coin_ctrl_7      ,   Region2_5_Coin.Ctrl7(
 //                                                                                                  param("Extra_Line_Beam")   ,
 //                                                                                                  param("Extra_Line_SAC")    ,
@@ -470,6 +482,16 @@ int main(int argc, char* argv[])
 //                                                                                                  param("Extra_Line_TOF_HT") , 
 //                                                                                                  param("Extra_Line_Other4") , 
 //                                                                                                  param("Extra_Line_Other5") ));
+=======
+  Write( fModule,   RGN2_5::mid,   "RGN2_5::Coin_ctrl_7 "     ,   RGN2_5::Coin_ctrl_7      ,   Region2_5_Coin.Ctrl7(
+                                                                                                  param("Extra_Line_Beam")   ,
+                                                                                                  param("Extra_Line_SAC")    ,
+                                                                                                  param("Extra_Line_TOF")    ,
+                                                                                                  param("Extra_Line_LC")     , 
+                                                                                                  param("Extra_Line_TOF_HT") , 
+                                                                                                  param("Extra_Line_Other4") , 
+                                                                                                  param("Extra_Line_Other5") ));
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
                                                             
   Write( fModule,   RGN2_5::mid,   "RGN2_5::Coin_coin_7 "     ,   RGN2_5::Coin_coin_7      ,   Region2_5_Coin.Coin7(
                                                                                                   param("Extra_Line_Beam")   ,
@@ -486,6 +508,11 @@ int main(int argc, char* argv[])
   
   
   
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
   //-------------------------------------------------------------------------
   // IOM : In/Out Maneger ( NIMOUT Signal Select ) Module
   //-------------------------------------------------------------------------

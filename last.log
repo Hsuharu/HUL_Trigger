@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 param/Clock.txt
 
 RGN1::SEL_TOF                 16650239
@@ -5,10 +6,24 @@ RGN1::Delay_BH1_Beam                 1
 RGN1::Delay_BH2_Beam                 6
 RGN1::Delay_BH1_Pi                   1
 RGN1::Delay_BH2_Pi                   9
+=======
+<<<<<<< HEAD
+param/TOF.txt
+=======
+param/c01.txt
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+
+RGN1::SEL_TOF                      255
+RGN1::Delay_BH1_Beam                 4
+RGN1::Delay_BH2_Beam                16
+RGN1::Delay_BH1_Pi                   1
+RGN1::Delay_BH2_Pi                  13
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN1::Delay_BH1_P                    1
 RGN1::Delay_BH2_P                    1
 RGN1::Width_BH1_Beam                 1
 RGN1::Width_BH2_Beam                 1
+<<<<<<< HEAD
 RGN1::Width_BH1_Pi                   4
 RGN1::Width_BH2_Pi                   1
 RGN1::Width_BH1_P                    1
@@ -17,6 +32,21 @@ RGN1::Delay_SAC_K_Scat               8
 RGN1::Delay_TOF_K_Scat               1
 RGN1::Delay_LC_K_Scat                1
 RGN1::Delay_TOF_HT_K_Scat            1
+=======
+<<<<<<< HEAD
+RGN1::Width_BH1_Pi                   4
+=======
+RGN1::Width_BH1_Pi                   1
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+RGN1::Width_BH2_Pi                   1
+RGN1::Width_BH1_P                    1
+RGN1::Width_BH2_P                    1
+RGN1::Delay_SAC_K_Scat               1
+<<<<<<< HEAD
+RGN1::Delay_TOF_K_Scat               7
+RGN1::Delay_LC_K_Scat                1
+RGN1::Delay_TOF_HT_K_Scat            7
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN1::Delay_Other4_K_Scat            1
 RGN1::Delay_Other5_K_Scat            1
 RGN1::Width_SAC_K_Scat              20
@@ -29,10 +59,33 @@ RGN1::Delay_K_Scat                   1
 RGN1::Width_K_Scat                  11
 RGN1::Coin_ctrl_Beam                 1
 RGN1::Coin_coin_Beam                 1
+<<<<<<< HEAD
 RGN2_5::Coin_ctrl_7                 64
+=======
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN1::Coin_ctrl_K_Scat              52
 RGN1::Coin_coin_K_Scat              16
+=======
+RGN1::Delay_TOF_K_Scat               1
+RGN1::Delay_LC_K_Scat                1
+RGN1::Delay_TOF_HT_K_Scat            1
+RGN1::Delay_Other4_K_Scat            1
+RGN1::Delay_Other5_K_Scat            1
+RGN1::Width_SAC_K_Scat              12
+RGN1::Width_TOF_K_Scat              12
+RGN1::Width_Lucite_K_Scat           12
+RGN1::Width_TOF_HT_K_Scat           12
+RGN1::Width_Other4_K_Scat           12
+RGN1::Width_Other5_K_Scat           12
+RGN1::Delay_K_Scat                   1
+RGN1::Width_K_Scat                  31
+RGN1::Coin_ctrl_Beam                 2
+RGN1::Coin_coin_Beam                 2
+RGN1::Coin_ctrl_K_Scat               0
+RGN1::Coin_coin_K_Scat               0
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
 RGN2_1::Delay_Beam                   1
+<<<<<<< HEAD
 RGN2_1::Delay_SAC                   14
 RGN2_1::Delay_TOF                    7
 RGN2_1::Delay_LC                     1
@@ -41,11 +94,22 @@ RGN2_1::Delay_Other4                11
 RGN2_1::Delay_Other5                 1
 RGN2_1::Width_Beam                   1
 RGN2_1::Width_SAC                   16
+=======
+RGN2_1::Delay_SAC                   11
+RGN2_1::Delay_TOF                   13
+RGN2_1::Delay_LC                    11
+RGN2_1::Delay_TOF_HT                 7
+RGN2_1::Delay_Other4                11
+RGN2_1::Delay_Other5                11
+RGN2_1::Width_Beam                   1
+RGN2_1::Width_SAC                    8
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN2_1::Width_TOF                    8
 RGN2_1::Width_LC                     8
-RGN2_1::Width_TOF_HT                 8
+RGN2_1::Width_TOF_HT                12
 RGN2_1::Width_Other4                 8
 RGN2_1::Width_Other5                 8
+<<<<<<< HEAD
 RGN2_1::Coin_ctrl_7                 80
 RGN2_1::Coin_coin_7                 80
 RGN2_2::Delay_Beam                   1
@@ -60,11 +124,28 @@ RGN2_2::Width_SAC                   11
 RGN2_2::Width_TOF                    8
 RGN2_2::Width_LC                     8
 RGN2_2::Width_TOF_HT                15
+=======
+RGN2_1::Coin_ctrl_7                 16
+RGN2_1::Coin_coin_7                 16
+RGN2_2::Delay_Beam                   1
+RGN2_2::Delay_SAC                   11
+RGN2_2::Delay_TOF                   13
+RGN2_2::Delay_LC                    11
+RGN2_2::Delay_TOF_HT                 7
+RGN2_2::Delay_Other4                11
+RGN2_2::Delay_Other5                11
+RGN2_2::Width_Beam                   1
+RGN2_2::Width_SAC                    8
+RGN2_2::Width_TOF                    8
+RGN2_2::Width_LC                     8
+RGN2_2::Width_TOF_HT                12
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN2_2::Width_Other4                 8
 RGN2_2::Width_Other5                 8
 RGN2_2::Coin_ctrl_7                116
 RGN2_2::Coin_coin_7                112
 RGN2_3::Delay_Beam                   1
+<<<<<<< HEAD
 RGN2_3::Delay_SAC                   14
 RGN2_3::Delay_TOF                    7
 RGN2_3::Delay_LC                     1
@@ -74,8 +155,19 @@ RGN2_3::Delay_Other5                 1
 RGN2_3::Width_Beam                   1
 RGN2_3::Width_SAC                   16
 RGN2_3::Width_TOF                    8
+=======
+RGN2_3::Delay_SAC                    1
+RGN2_3::Delay_TOF                    7
+RGN2_3::Delay_LC                     1
+RGN2_3::Delay_TOF_HT                 9
+RGN2_3::Delay_Other4                 1
+RGN2_3::Delay_Other5                 1
+RGN2_3::Width_Beam                   1
+RGN2_3::Width_SAC                   24
+RGN2_3::Width_TOF                   16
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN2_3::Width_LC                     8
-RGN2_3::Width_TOF_HT                 8
+RGN2_3::Width_TOF_HT                16
 RGN2_3::Width_Other4                 8
 RGN2_3::Width_Other5                 8
 RGN2_3::Coin_ctrl_7                116
@@ -94,8 +186,13 @@ RGN2_4::Width_LC                     8
 RGN2_4::Width_TOF_HT                 8
 RGN2_4::Width_Other4                 8
 RGN2_4::Width_Other5                 8
+<<<<<<< HEAD
 RGN2_4::Coin_ctrl_7                 66
 RGN2_4::Coin_coin_7                 66
+=======
+RGN2_4::Coin_ctrl_7                  0
+RGN2_4::Coin_coin_7                  0
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN2_6::Delay_Beam_E03               1
 RGN2_6::Delay_Other1_E03             1
 RGN2_6::Delay_Other2_E03             1
@@ -110,19 +207,40 @@ RGN2_6::Width_Other4_E03             8
 RGN2_6::Width_Other5_E03             8
 RGN2_6::Coin_ctrl_6                  0
 RGN2_6::Coin_coin_6                  0
+<<<<<<< HEAD
 RGN3::Selector_PS                    0
+=======
+<<<<<<< HEAD
+RGN3::Selector_PS                    2
+=======
+RGN3::Selector_PS                   64
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN3::Delay_PS_OR                    1
 RGN3::Delay_all_Else_OR              1
 RGN3::Width_Else_OR                 12
 RGN3::Delay_part_Else_OR             3
 RGN3::Delay_K_Scat                   1
 RGN3::Width_K_Scat                  31
+<<<<<<< HEAD
 RGN4::Delay_BH2                     11
 RGN4::Delay_BH2_K                   11
 RGN4::Width_BH2_K                   12
+=======
+<<<<<<< HEAD
+RGN4::Delay_BH2                      9
+RGN4::Delay_BH2_K                   11
+RGN4::Width_BH2_K                   12
+=======
+RGN4::Delay_BH2                      1
+RGN4::Delay_BH2_K                    1
+RGN4::Width_BH2_K                    4
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN4::Selector_8                     0
-RGN4::Selector_Clock                 1
+RGN4::Selector_Clock                 0
 RGN4::Selector_Reserve2              0
+<<<<<<< HEAD
 RGN3::PreScale_Beam                999
 RGN3::PreScale_Beam_TOF              9
 RGN3::PreScale_Beam_Pi               9
@@ -130,6 +248,16 @@ RGN3::PreScale_Beam_P                9
 RGN3::PreScale_Coin1                 9
 RGN3::PreScale_For_E03               0
 RGN3::RST_PSCNT                      0
+=======
+RGN3::PreScale_Beam                 99
+RGN3::PreScale_Beam_TOF              0
+RGN3::PreScale_Beam_Pi               0
+RGN3::PreScale_Beam_P                0
+RGN3::PreScale_Coin1                 0
+RGN3::PreScale_For_E03               0
+RGN3::RST_PSCNT                      0
+<<<<<<< HEAD
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 Extra_Line_Dealy_Beam                1
 Extra_Line_Dealy_SAC                 1
 Extra_Line_Dealy_TOF                 1
@@ -144,5 +272,13 @@ Extra_Line_Width_LC                  8
 Extra_Line_Width_TOF_HT              8
 Extra_Line_Width_Other4              8
 Extra_Line_Width_Other5              8
+<<<<<<< HEAD
 RGN2_5::Coin_coin_7                 64
 Extra_Line_PreScale                 99
+=======
+RGN2_5::Coin_ctrl_7                 16
+RGN2_5::Coin_coin_7                 16
+Extra_Line_PreScale                  0
+=======
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42

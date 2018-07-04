@@ -1,6 +1,24 @@
+<<<<<<< HEAD
 nim_param/nimOUT.txt
 
 IOM::NIMOUT1                        19
 IOM::NIMOUT2                        24
 IOM::NIMOUT3                        20
 IOM::NIMOUT4                        21
+=======
+<<<<<<< HEAD
+nim_param/coin1.txt
+
+IOM::NIMOUT1                        19
+IOM::NIMOUT2                        21
+IOM::NIMOUT3                        24
+IOM::NIMOUT4                        23
+=======
+nim_param/c0.txt
+
+IOM::NIMOUT1                        12
+IOM::NIMOUT2                        13
+IOM::NIMOUT3                        14
+IOM::NIMOUT4                        15
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42

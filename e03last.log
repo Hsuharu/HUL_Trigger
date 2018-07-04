@@ -4,8 +4,13 @@ RGN2_4::Delay_Beam                   1
 RGN2_4::Delay_SAC                   11
 RGN2_4::Delay_TOF                   13
 RGN2_4::Delay_LC                    11
+<<<<<<< HEAD
 RGN2_4::Delay_TOF_HT                13
 RGN2_4::Delay_Other4                15
+=======
+RGN2_4::Delay_TOF_HT                 7
+RGN2_4::Delay_Other4                11
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 RGN2_4::Delay_Other5                11
 RGN2_4::Width_Beam                   1
 RGN2_4::Width_SAC                    8

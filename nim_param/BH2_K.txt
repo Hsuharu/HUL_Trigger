@@ -1,16 +1,37 @@
+<<<<<<< HEAD
 IOM::NIMOUT1   12            //BH2_Beam                
 #IOM::NIMOUT2   34            //BH2_1_DLY               
 IOM::NIMOUT2   35            //BH2_2_DLY               
+=======
+<<<<<<< HEAD
+IOM::NIMOUT1   12            //BH2_Beam                
+#IOM::NIMOUT2   34            //BH2_1_DLY               
+=======
+IOM::NIMOUT1    1            //BH2_Beam                
+IOM::NIMOUT2   34            //BH2_1_DLY               
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+#IOM::NIMOUT2   35            //BH2_2_DLY               
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 #IOM::NIMOUT2   36            //BH2_3_DLY               
 #IOM::NIMOUT2   37            //BH2_4_DLY               
 #IOM::NIMOUT2   38            //BH2_5_DLY               
 #IOM::NIMOUT2   39            //BH2_6_DLY              
 #IOM::NIMOUT2   40            //BH2_7_DLY              
+<<<<<<< HEAD
 #IOM::NIMOUT2   41            //BH2_8_DLY          
 IOM::NIMOUT3   33            //K_Scat_Else_OR       !! param Else_Or !! 
 IOM::NIMOUT4   42            //K_Scat_BH2_K   
 #IOM::NIMOUT3   33            //K_Scat_Else_OR       !! param Else_Or !! 
 #IOM::NIMOUT4    7            //TOF_K_Scat              
+=======
+<<<<<<< HEAD
+IOM::NIMOUT2   41            //BH2_8_DLY          
+=======
+#IOM::NIMOUT2   41            //BH2_8_DLY          
+>>>>>>> 7dfda778472af485f7d14c21b21f1d1a5688f408
+IOM::NIMOUT3   33            //K_Scat_Else_OR       !! param Else_Or !! 
+IOM::NIMOUT4    7            //TOF_K_Scat              
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 
                  ////////////////////////////////////////
                  //    ID 1                            //      

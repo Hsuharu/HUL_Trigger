@@ -50,7 +50,10 @@ function nimid(){
   if [ "$1" == "39" ]; then echo  "(BH2_6,K)      "; fi
   if [ "$1" == "40" ]; then echo  "(BH2_7,K)      "; fi
   if [ "$1" == "41" ]; then echo  "(BH2_8,K)      "; fi
+<<<<<<< HEAD
   if [ "$1" == "42" ]; then echo  "K_Scat_BH2_K      "; fi
+=======
+>>>>>>> 8f8035e224460a269bb5d4e591d850172e942b42
 }
 
 while true
